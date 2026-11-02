@@ -1,0 +1,309 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "EC-BC-02",
+   "name": "Voices in the bell",
+   "level": 3,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Core problem: Memories manifest as voices and scenes; truth and false inference become difficult to separate.",
+     "Regional identity: ... drowned bell towers, echoing sea caves."
+    ],
+    "open": [
+     "The harpies' Luring Song uses the voices the drowned bell has kept, so a charmed character hears a friend calling from the shallows.",
+     "The party must cross the tide flats to reach the belfry (EC-BC-03) and the cliff stair (EC-BC-05)."
+    ],
+    "clue_rooms": [
+     "EC-BC-03"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Harpy",
+     "count": 4,
+     "int": 7,
+     "languages": [
+      "Common"
+     ],
+     "cr": "1",
+     "roles": [
+      "controller",
+      "skirmisher"
+     ],
+     "does": "Roosts on the belfry and the tall stones; sings the Luring Song with the bell's stolen voices; flies down to claw the lured.",
+     "start": [
+      [
+       20.0,
+       20.0
+      ],
+      [
+       22.0,
+       20.0
+      ],
+      [
+       17.0,
+       12.0
+      ],
+      [
+       11.0,
+       12.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       18,
+       17
+      ],
+      [
+       20,
+       17
+      ],
+      [
+       15,
+       10
+      ],
+      [
+       9,
+       10
+      ]
+     ]
+    },
+    {
+     "srd": "Giant Crab",
+     "count": 4,
+     "int": 1,
+     "languages": [],
+     "cr": "1/8",
+     "roles": [
+      "brute",
+      "soldier"
+     ],
+     "does": "Lies in the rock pools and rises when the song starts; grapples whoever the song draws into the shallows.",
+     "start": [
+      [
+       9.0,
+       15.0
+      ],
+      [
+       15.0,
+       16.0
+      ],
+      [
+       18.0,
+       14.0
+      ],
+      [
+       12.0,
+       13.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       7,
+       13
+      ],
+      [
+       13,
+       14
+      ],
+      [
+       16,
+       12
+      ],
+      [
+       10,
+       11
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 900,
+    "band": "Moderate",
+    "budget": {
+     "Low": 600,
+     "Moderate": 900,
+     "High": 1600
+    },
+    "measured": {
+     "build": "as built (4 Harpies, 4 Giant Crabs)",
+     "plays_as": "high",
+     "runs": 10,
+     "wins": 7,
+     "losses": 0,
+     "out_of_rounds": 3,
+     "drops_per_run": 0.5,
+     "deaths": 1,
+     "rounds_to_win": 7.6,
+     "party": "a test party (level 3, team tactics)"
+    },
+    "tuner_recommends": "one fewer Giant Crab (plays as moderate); not applied: the GM has not decided",
+    "target": "moderate"
+   },
+   "terrain": {
+    "light": "Bright (daylight under a thin overcast)",
+    "water": "rock pools across the tide flats; the belfry stands in the shallows",
+    "flight": "open sky everywhere but the echo cave (12 ft, lowering to 6 ft)",
+    "rewards": [
+     "fliers and swimmers",
+     "creatures that pull characters into the water",
+     "ranged harassment from the belfry"
+    ],
+    "gaps": "no narrow passages on the flats; the echo cave mouth is 15 ft wide"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "the room and its daylight",
+     "the bell's kept voices as what lures or misleads the party",
+     "the crossing to the belfry and the stair",
+     "the measured difficulty (plays as high, or the GM's chosen target)"
+    ],
+    "filters": {
+     "themes": [
+      "aquatic",
+      "flying"
+     ],
+     "habitats": [
+      "Coastal",
+      "Underwater"
+     ],
+     "roles": [
+      "controller",
+      "skirmisher",
+      "brute",
+      "soldier"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Large",
+     "movement": "a swimmer or a flier fits the map best; walkers only in the mix"
+    },
+    "freshness": "a remix for returning players avoids Harpies and Giant Crabs"
+   },
+   "not_simulated": [
+    "Giant Crab: Claw applies Grappled",
+    "Giant Crab: Swim speed",
+    "the harpies' Luring Song (Charmed)"
+   ],
+   "routes": [
+    {
+     "id": "out-sing",
+     "approach": "perform",
+     "who": [
+      "Harpy"
+     ],
+     "when": "Once the first voice calls from the shallows, before anyone is charmed.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Performance",
+      "dc": 15,
+      "group": false
+     },
+     "success": "The singer answers in the same voices and the harpies' song loses them: the bell falls quiet, the harpies circle and screech but only attack a character who wades into the shallows, and the crabs stay in their pools. The party crosses the flats.",
+     "failure": "The song swells over the singer's voice: the fight starts as written, and the singer has Disadvantage on its first saving throw against the Luring Song.",
+     "lines": [
+      "Harpy, in a borrowed sailor's voice: 'Come down to the boats, love, the tide is in!'",
+      "Harpy, when the song breaks: 'Thief! Those are our voices!'"
+     ],
+     "reveals": "The voices the harpies use are real people from the old quay: names cried as ships came in, the people who came by sea.",
+     "canon": "Shows the core problem in play: real memories, used to mislead."
+    },
+    {
+     "id": "bargain",
+     "approach": "bargain",
+     "who": [
+      "Harpy"
+     ],
+     "when": "A character speaks to the harpies before the song starts (they speak Common and are vain about their singing).",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 15,
+      "group": false
+     },
+     "condition_alt": "Or a gift they want: Rusk's catch from the boat, or something that shines.",
+     "success": "The harpies let the party cross to the cliff stair and watch from the belfry. Their price: no one touches the bell, because it calls the sailors they feed on.",
+     "failure": "They laugh and begin to sing: the fight starts as written.",
+     "cost": "The bell's memories (EC-BC-03) now break the bargain: touching the bell starts this fight in the belfry.",
+     "lines": [
+      "Harpy: 'The bell is ours. It sings, they come. You may pass, little walkers, if you leave our bell alone.'"
+     ],
+     "reveals": "The harpies know the bell repeats only what was once said near it, and that it never says anything new.",
+     "later": "If the party touches the bell anyway, the harpies attack in EC-BC-03 (same creatures, the crabs rising from the shallows around the stump).",
+     "canon": "The party chooses between a safe crossing and the memories: a small version of the chapter's moral question about useful stories and evidence."
+    },
+    {
+     "id": "feed-the-crabs",
+     "approach": "distract",
+     "who": [
+      "Giant Crab"
+     ],
+     "when": "Anyone who sees a crab move in the pools, or has fish or meat to throw.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Animal Handling",
+      "dc": 12,
+      "group": false
+     },
+     "success": "Fish thrown into the far pools draw the crabs away: they join the fight only on the third round, if it comes to one.",
+     "failure": "The crabs come for the food and the thrower: they rise at once and close on the party.",
+     "reveals": "Nothing new: the crabs are only hungry.",
+     "canon": "Does not change the story job; it shrinks the fight."
+    },
+    {
+     "id": "along-the-cliff",
+     "approach": "sneak past",
+     "who": [
+      "Harpy",
+      "Giant Crab"
+     ],
+     "when": "The party keeps to the cliff foot, out of the pools, toward the stair.",
+     "check": {
+      "ability": "Dexterity",
+      "skill": "Stealth",
+      "dc": 11,
+      "group": true
+     },
+     "success": "The party reaches the cliff stair unseen (the harpies' Passive Perception is 10, the crabs' 9). The song starts only if someone goes out to the belfry.",
+     "failure": "A harpy spots them halfway: the fight starts with the party strung out along the cliff foot.",
+     "cost": "The belfry's memories wait in the shallows: going out to them later wakes the encounter.",
+     "reveals": "Nothing new on the way; the bell strikes once as the tide turns.",
+     "canon": "The clue room is still there to visit; nothing is skipped for good."
+    },
+    {
+     "id": "the-ledge",
+     "approach": "avoid",
+     "who": [
+      "Harpy",
+      "Giant Crab"
+     ],
+     "when": "In the echo cave (EC-BC-04), after Selric tests it, someone looks for another way up.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Survival",
+      "dc": 14,
+      "group": false
+     },
+     "success": "A sea ledge runs from the cave mouth round the cliff to the foot of the stair, out of the harpies' sight: the party skips the tide flats and the belfry.",
+     "failure": "The ledge ends in a sheer drop; the party comes back to the flats having lost time.",
+     "bypasses": [
+      "EC-BC-02",
+      "EC-BC-03"
+     ],
+     "clue_elsewhere": "EC-BC-04 the echo cave shows the same trick in small (Selric: 'It does not lie. It edits.'), and the chapter's later rooms (the crystal maze, the amphitheater, the memory palace) carry the core problem on.",
+     "reveals": "From the ledge the party sees the harpies' roost and the bell from above: the bell's rim is crusted with offerings, not shells.",
+     "canon": "The core problem is still delivered by the echo cave and the rest of the chapter."
+    }
+   ]
+  }
+ ]
+}

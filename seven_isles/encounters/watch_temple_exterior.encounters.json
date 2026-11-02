@@ -1,0 +1,160 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "VI-WX-02",
+   "name": "The sun-warmed nest",
+   "level": 1,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Primary locations: Last village, harbor, failing ward stones, buried watch-temple.",
+     "Core problem: Protective wards misfire and corrupted creatures threaten the settlement."
+    ],
+    "open": [
+     "The snakes are the easy fight before the temple; the hunters' net on the path (VI-WX-01) can wake them.",
+     "The gate arch's road-and-hand carving (VI-WX-03) matches the sealed ward door inside."
+    ],
+    "clue_rooms": [
+     "VI-WX-03"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Giant Venomous Snake",
+     "count": 2,
+     "int": 2,
+     "languages": [],
+     "cr": "1/4",
+     "roles": [
+      "skirmisher"
+     ],
+     "does": "Basks coiled in the warm sand of the sunken court, scales shimmering faintly blue along the spine; strikes with a 10-foot reach at anyone who comes down among the pillars.",
+     "start": [
+      [
+       11.0,
+       8.0
+      ],
+      [
+       17.0,
+       11.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       9,
+       7
+      ],
+      [
+       15,
+       10
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 100,
+    "band": "below Low",
+    "budget": {
+     "Low": 200,
+     "Moderate": 300,
+     "High": 400
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "high",
+     "runs": 10,
+     "wins": 7,
+     "losses": 3,
+     "out_of_rounds": 0,
+     "drops_per_run": 2.8,
+     "deaths": 0,
+     "rounds_to_win": 4.4,
+     "party": "a test party (level 1, team tactics)"
+    },
+    "target": "low",
+    "tuner_recommends": "one fewer Giant Venomous Snake (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Bright (grey daylight)",
+    "water": "none",
+    "flight": "open sky",
+    "rewards": [
+     "reach and poison",
+     "creatures that hide in sand and rubble"
+    ],
+    "gaps": "the collapsed entrance is a 10-ft stair; the forecourt is open between four pillars"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "the forecourt in daylight",
+     "beasts touched by the failing wards (the blue shimmer)",
+     "an easy fight before the temple (plays as low, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [],
+     "habitats": [
+      "Coastal",
+      "Grassland"
+     ],
+     "roles": [
+      "skirmisher"
+     ],
+     "tone_cap": "spooky",
+     "max_size": "Large",
+     "movement": "walkers; burrowers or swimmers only in the mix"
+    },
+    "freshness": "a remix for returning players avoids Giant Venomous Snakes"
+   },
+   "not_simulated": [
+    "Giant Venomous Snake: Swim speed"
+   ],
+   "routes": [
+    {
+     "id": "round-the-rim",
+     "approach": "sneak past",
+     "who": [
+      "Giant Venomous Snake"
+     ],
+     "when": "The party keeps to the forecourt's rim and the fallen gatehouse instead of crossing the sand.",
+     "check": {
+      "ability": "Dexterity",
+      "skill": "Stealth",
+      "dc": 10,
+      "group": true
+     },
+     "success": "The party reaches the collapsed entrance without waking the snakes; they stay basking.",
+     "failure": "Sand slides under a boot: the snakes uncoil and the fight starts with the party strung out along the rim.",
+     "reveals": "On the way the party passes under the gate arch and sees the road ending in an open hand (VI-WX-03).",
+     "canon": "Nothing is skipped: the arch's carving is on the rim route."
+    },
+    {
+     "id": "smoke-them-out",
+     "approach": "scare off",
+     "who": [
+      "Giant Venomous Snake"
+     ],
+     "when": "Someone has fire and dune grass to burn.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Survival",
+      "dc": 12,
+      "group": false
+     },
+     "success": "Smouldering grass drives the snakes out of the court and into the dunes; they do not come back while the smoke lasts (1 hour).",
+     "failure": "The smoke drifts the wrong way; the snakes strike at the smoker first.",
+     "reveals": "Under the sand where they lay, the flagstones are carved with a cracked road: the same as the temple nave's mosaic.",
+     "canon": "Hunters' knowledge, the village's way of living with the island; the source still waits inside."
+    }
+   ]
+  }
+ ]
+}

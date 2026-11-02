@@ -1,0 +1,212 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "SA-PV-02",
+   "name": "The preserved guard",
+   "level": 6,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Function: Reveal Aelwyn and the Free Warden simultaneously; complete Kaelra's costly truth.",
+     "Core problem: The preservation system treats identity, memory, and bloodline as resources.",
+     "Moral question: Wake Aelwyn under unsafe conditions, leave her within the failing system, or find a costly method that preserves her ability to choose."
+    ],
+    "open": [
+     "The guardian's amulet is set in the seal's carved hand (SA-PV-04): the empty bowl's price opens the seal slowly and stills the guardian.",
+     "Veynar's people are close behind the party."
+    ],
+    "clue_rooms": [
+     "SA-PV-03",
+     "SA-PV-04",
+     "SA-PV-05"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Shield Guardian",
+     "count": 1,
+     "int": 7,
+     "languages": [
+      "Understands commands given in any language but can't speak"
+     ],
+     "cr": "7",
+     "roles": [
+      "soldier"
+     ],
+     "does": "A great figure of plated stone bound to the vault's seal (its amulet is set in the seal hall, so its Shield reaction protects no one); guards the cloister.",
+     "start": [
+      [
+       14.5,
+       13.5
+      ]
+     ],
+     "authoring_start": [
+      [
+       12,
+       10
+      ]
+     ]
+    },
+    {
+     "srd": "Animated Armor",
+     "count": 5,
+     "int": 1,
+     "languages": [],
+     "cr": "1",
+     "roles": [
+      "soldier"
+     ],
+     "does": "The vault's preserved honour guard, each with a name carved on its breastplate; keeps its post in the cloister's arches.",
+     "start": [
+      [
+       9.0,
+       15.0
+      ],
+      [
+       20.0,
+       15.0
+      ],
+      [
+       12.0,
+       18.0
+      ],
+      [
+       17.0,
+       18.0
+      ],
+      [
+       10.0,
+       15.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       7,
+       12
+      ],
+      [
+       18,
+       12
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       15,
+       15
+      ],
+      [
+       8,
+       12
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 3900,
+    "band": "Low",
+    "budget": {
+     "Low": 2400,
+     "Moderate": 4000,
+     "High": 5600
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "low",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 0.3,
+     "deaths": 0,
+     "rounds_to_win": 3.2,
+     "party": "a test party (level 6, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "one more Animated Armor (at 8,12) (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Lanterns without smoke (Bright in the cloister)",
+    "water": "none",
+    "flight": "a cloister of white columns",
+    "rewards": [
+     "a large guardian with a crowd of armoured honour guards",
+     "columns for cover"
+    ],
+    "gaps": "the cloister arches are 5 ft; the hall doors 10 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "guardians bound to the vault's seal",
+     "the preserved honour guard with their carved names",
+     "the reveal scene that follows in the vault (both truths together)",
+     "the measured difficulty (plays as moderate as built, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "construct"
+     ],
+     "habitats": [
+      "Urban"
+     ],
+     "roles": [
+      "soldier"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Large",
+     "movement": "walkers"
+    },
+    "freshness": "a remix for returning players avoids the Shield Guardian and Animated Armor"
+   },
+   "not_simulated": [
+    "Shield Guardian: Shield reaction (no amulet bearer here)",
+    "Shield Guardian: Spell Storing (the GM's)"
+   ],
+   "routes": [
+    {
+     "id": "the-names-on-the-armour",
+     "approach": "lore",
+     "who": [
+      "Animated Armor",
+      "Shield Guardian"
+     ],
+     "when": "A character reads the names carved on the breastplates aloud, one by one, before the guard moves.",
+     "check": {
+      "ability": "Intelligence",
+      "skill": "History",
+      "dc": 15,
+      "group": false
+     },
+     "success": "Each armour named lowers its weapon and stands at rest: they were people once, kept as guards. The Shield Guardian, alone, stays at the seal hall door and only blocks anyone who tries to pass it by force.",
+     "failure": "The old names are mispronounced; the guard steps out of the arches.",
+     "reveals": "The honour guard were the vault's servants, preserved as equipment: the core problem in their own names.",
+     "canon": "Shows the preservation system treating identity as a resource, before the vault itself."
+    },
+    {
+     "id": "the-empty-bowl-first",
+     "approach": "help",
+     "who": [
+      "Shield Guardian"
+     ],
+     "when": "The party reaches the seal hall (SA-PV-04) by another way, or while the guard stands at rest.",
+     "condition": "The champion pays the empty bowl's price: a memory he would rather keep, given freely.",
+     "success": "As the seal begins to open, the guardian's amulet in the carved hand dims and the guardian kneels. The cloister falls still.",
+     "failure": "Not applicable: the price is paid or it is not.",
+     "cost": "The champion loses the memory for good (the GM and the player choose it together).",
+     "reveals": "The seal answers a free gift, not blood and not obedience.",
+     "canon": "The costly method that preserves her ability to choose: the moral question's third answer, chosen in play."
+    }
+   ]
+  }
+ ]
+}

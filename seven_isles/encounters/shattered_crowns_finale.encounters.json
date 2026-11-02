@@ -1,0 +1,280 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "DV-02",
+   "name": "The coronation",
+   "level": 7,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Function: Final rejection of manufactured kingship; prevent single-person control of the network.",
+     "Revelation: The Hollow Regent was built to preserve succession, not to select or create a king.",
+     "Climax: Rusk breaks the blockade; Kaelra destroys her control network; the champion rejects Veynar's coronation; Aelwyn establishes her boundary.",
+     "End state: Veynar and Drelith escape with limited power (a fragment of the dominion-stone, the level-8 hook). No one controls all seven stones; a new compact says no stone, regent, heir or warden may command the isles alone.",
+     "The Wardbound: the seventh stone answers only when the villagers knowingly choose to join the new compact: their consent, not their ancestry, denies Veynar sole authority."
+    ],
+    "open": [
+     "Veynar's offer comes first (social): the crown, freely given, if the champion will wear it. Refusing it is a choice, never a roll; until then the stone's pressure falls on everyone else.",
+     "Kaelra burns her network at the start of round 2 (or earlier if asked): the hidden anchor shows and every illusion in the vault ends. She loses her archive and her escape.",
+     "Rusk's flotilla rams Veynar's boom at the sea breach (DV-04) at the start of round 3; the villagers who sailed with him reach the gallery (DV-05).",
+     "Aelwyn is in the gallery, weak, and refuses the crown for herself before everyone: no one decides her future before she understands the present. She does not fight.",
+     "Attitudes: Veynar and Drelith Hostile; the wardens Hostile on orders, Indifferent once no king is left to guard.",
+     "Three coronation anchors (crowns pried from the regents' tombs, on iron posts around the floor) feed the dominion-stone; breaking them weakens Veynar's hold. Posts stand at (9,9) and (11,11); the third, at (10,6), is hidden behind an illusion of empty floor until Kaelra burns her thread-mirrors. A post is AC 15, 30 HP, immune to Poison and Psychic damage, or an action and a DC 15 Strength (Athletics) or Intelligence (Arcana) check: use Call a check in On the fly.",
+     "The dominion surge: at the start of each round while a post stands and the villagers have not answered, each creature on the floor but Veynar and Drelith makes a DC 15 Wisdom save, minus 2 for each broken post. On a failure it has Disadvantage on attack rolls against Veynar until the next round. A creature that has refused the crown aloud, or is Unconscious, is not affected.",
+     "Veynar, the GM's to play: Legendary Resistance (2/Day, each cracks a ring). Command of the Stone (Recharge 5-6): DC 16 Wisdom save, 20-ft Sphere within 90 ft, 22 (4d10) Psychic, half on a success, and no Reactions on a failure. Ember Ring (Bonus Action): DC 16 Constitution save, 60 ft, 9 (2d8) Fire, half on a success. Storm Ring (Reaction): a creature ending its move within 10 ft, DC 16 Strength save or pushed 15 ft. Counterspell and Hold Person once each. Legendary Actions: 3 while a post stands, else 2: Lance; Borrowed Voice (DC 16 Wisdom, moves half Speed toward a point he chooses); Bound Choice (2 uses, DC 16 Wisdom, Charmed until the end of its next turn; never the champion once he has refused).",
+     "Drelith, the GM's to play: Relentless Endurance (1/Day: 0 HP becomes 1 HP). Rally (Bonus Action, Recharge 5-6): regains 15 HP. Interception (Reaction): cuts the damage to an ally within 5 ft by 8. When Veynar escapes, Drelith takes Disengage toward the breach on his next turn and follows, leaving his shield and rank token.",
+     "Veynar's escape, on the map at (18,8): the ring is his way out, and Kaelra names it at the end of round 2 at the latest, so the party has time to act. It triggers when he drops to 30 HP or fewer, or loses his authority after the champion has refused. He goes on his next turn: set him to Fled in the scene tools. If he reaches 0 HP first, a whole ring takes him at once, so don't offer a strike at it after that. A party that broke the ring first, or that holds him Grappled or Incapacitated, has stopped him: he can be captured."
+    ],
+    "clue_rooms": [
+     "DV-04",
+     "DV-05"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Captain Drelith",
+     "count": 1,
+     "int": 11,
+     "languages": [
+      "Common plus one other language"
+     ],
+     "cr": "3",
+     "roles": [
+      "soldier"
+     ],
+     "does": "Hostile while Veynar commands. Holds the coronation floor in front of the dais and protects Veynar efficiently, without anger; cracks his knuckles before he strikes. He obeys rather than chooses: when Veynar flees, he follows, leaving his shield and rank token behind.",
+     "start": [
+      [
+       13.0,
+       4.0
+      ]
+     ],
+     "stand_in": "Knight"
+    },
+    {
+     "srd": "Dominion Warden",
+     "count": 2,
+     "int": 11,
+     "languages": [
+      "Common plus one other language"
+     ],
+     "cr": "3",
+     "roles": [
+      "soldier"
+     ],
+     "does": "Indifferent at heart, Hostile on orders: soldiers sworn to guard a lawful coronation, posted at the anchors. They fight while there is a king to guard; when the crown is refused by everyone it was offered to, they no longer know whom they serve.",
+     "start": [
+      [
+       14.0,
+       4.0
+      ],
+      [
+       13.0,
+       5.0
+      ]
+     ],
+     "stand_in": "Knight"
+    },
+    {
+     "srd": "Lord Veynar",
+     "count": 1,
+     "int": 17,
+     "languages": [
+      "Common plus three other languages"
+     ],
+     "cr": "6",
+     "roles": [
+      "lurker"
+     ],
+     "does": "Hostile. Stands on the dais beside the dominion-stone with the crown in his hands and offers it to the champion before anyone draws steel; he fights only once the offer is refused, and every pulse of the stone is his argument that useful rule matters more than consent. Adjusts his rings when he names a necessity. He will not die here: when his authority breaks he goes through the sea breach by the ring anchor, with a fragment of the stone.",
+     "start": [
+      [
+       14.0,
+       5.0
+      ]
+     ],
+     "stand_in": "Mage"
+    }
+   ],
+   "difficulty": {
+    "xp": 5700,
+    "band": "Moderate",
+    "budget": {
+     "Low": 3000,
+     "Moderate": 5200,
+     "High": 6800
+    },
+    "target": "moderate",
+    "note": "Veynar 3,900 XP + Drelith 1,800 XP, with the wardens standing down once the crown is refused. Not measured since the finale's own creatures went in."
+   },
+   "terrain": {
+    "light": "Dim in the vault; Bright within 20 ft of the dominion-stone on the dais",
+    "water": "the sea breach on the east wall (DV-04), open to the bay",
+    "flight": "a high vault over the coronation floor",
+    "rewards": [
+     "a commander on a dais behind a disciplined line",
+     "objectives on the floor (the anchors) that matter more than hit points"
+    ],
+    "gaps": "the stair down from the throne hall and the breach are 10 ft wide"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "Lord Veynar and Captain Drelith themselves (named villains; never swapped for other creatures)",
+     "the crown offered to the champion, refusable aloud with no roll",
+     "the villagers' consent freely given: some refuse and that is honoured; no one is transformed against their will and none fights",
+     "Kaelra burning her network, Rusk breaking the chain, Aelwyn's boundary",
+     "Veynar's escape with a fragment of the dominion-stone and Drelith following him, unless the table knowingly stops it (the GM's ruling)"
+    ],
+    "filters": {
+     "themes": [
+      "humanoid"
+     ],
+     "habitats": [
+      "Urban"
+     ],
+     "roles": [
+      "lurker",
+      "soldier"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Medium",
+     "movement": "walkers"
+    },
+    "freshness": "the named villains stay; only the Dominion Wardens may change, and for returning players they avoid Knights (the lion causeway has three)"
+   },
+   "not_simulated": [
+    "the crown's offer, the dominion surge, the anchors, Kaelra's exposure, Rusk's arrival, the villagers' consent and Veynar's escape are the GM's to play",
+    "Knight: Parry reaction is played; Leadership is the GM's",
+    "Remix cannot swap Lord Veynar or Captain Drelith: they are this adventure's own creatures",
+    "Veynar's and Drelith's abilities beyond their attacks are the GM's to play (the notes above)"
+   ],
+   "routes": [
+    {
+     "id": "refuse-the-crown",
+     "approach": "help",
+     "who": [
+      "Lord Veynar",
+      "Dominion Warden"
+     ],
+     "when": "Veynar offers the crown from the dais, before or during the fight.",
+     "condition": "The champion refuses the crown aloud (the player's own words; no roll).",
+     "success": "The champion is free of the dominion surge for the rest of the fight. When Aelwyn has also refused it, the wardens are left guarding a coronation no one will accept: they lower their weapons and step back to the gallery (they become Indifferent).",
+     "failure": "Not a failure but a different story: a champion who takes the crown is bound to the stone's consent-forcing; the GM plays the consequences.",
+     "lines": [
+      "Veynar (adjusting a ring): 'They need you. Need is a kind of birthright. Take it, and no one has to choose anything ever again.'",
+      "Answer (the champion's own words are better): 'That is exactly what is wrong with it.'"
+     ],
+     "reveals": "The stone's offer was never the champion's to accept: the regent preserves succession, it does not make kings.",
+     "canon": "The champion's final victory is rejecting coercive kingship when claiming it would be easiest."
+    },
+    {
+     "id": "whom-do-you-guard",
+     "approach": "parley",
+     "who": [
+      "Dominion Warden"
+     ],
+     "when": "After the crown has been refused, a character asks the wardens whom they are guarding now.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 15,
+      "group": false
+     },
+     "success": "The wardens stand down and guard the villagers' gallery instead; the party faces only Drelith and Veynar.",
+     "failure": "Drelith's voice holds them ('Orders stand.'); they fight on, and may be asked again next round.",
+     "reveals": "They swore to a lawful king, as the causeway's knights did; a manufactured one was never what they meant.",
+     "canon": "Manufactured consent fails once the people it needs choose freely."
+    },
+    {
+     "id": "the-villagers-answer",
+     "approach": "help",
+     "who": [
+      "Lord Veynar",
+      "Captain Drelith",
+      "Dominion Warden"
+     ],
+     "when": "The villagers reach the gallery (round 3 or later) and a character, or Elder Sira, asks them whether they join a compact in which no one commands the isles alone.",
+     "condition": "Enough villagers choose freely, each in their own words; the GM plays it as a scene, not a check. A character can buy time for it by holding Drelith off the gallery stair.",
+     "success": "The seventh stone answers through them (faint meteor-veins, star-bright eyes, a shared hum): the dominion surge ends, each party member gains 10 Temporary Hit Points, and Veynar's authority is broken. He goes for the ring anchor on his next turn; Drelith follows.",
+     "failure": "No one is compelled: if too few answer, the fight goes on and the anchors decide it.",
+     "lines": [
+      "Sira: 'No one here is asked to be a stone. You are asked whether anyone should rule you alone. Answer for yourselves.'"
+     ],
+     "reveals": "The Wardbound: the stone dispersed itself among the refugees it sheltered; their consent, not their ancestry, is its answer.",
+     "canon": "The Wardbound reveal (GM-only secret, revealed here) and the new compact."
+    },
+    {
+     "id": "the-ring-in-the-breach",
+     "approach": "lore",
+     "who": [
+      "Lord Veynar"
+     ],
+     "when": "A character studies the sixth ring set into the breach stone (DV-04), which glows when Veynar is near.",
+     "check": {
+      "ability": "Intelligence",
+      "skill": "Arcana",
+      "dc": 13,
+      "group": false
+     },
+     "success": "The character knows it as Veynar's way out, before it is needed. Destroying it (AC 15, 10 HP, a Tiny object), countering his spell, or keeping him Grappled or Incapacitated stops the escape, and he can be captured.",
+     "failure": "It looks like loot; Kaelra names it after round 2 anyway.",
+     "reveals": "Veynar planned to lose and keep a fragment: stewardship, to him, is ownership by other means.",
+     "canon": "Veynar leaves with a fragment of the dominion-stone unless the party stops the ring in time."
+    },
+    {
+     "id": "drelith-chooses",
+     "approach": "parley",
+     "who": [
+      "Captain Drelith"
+     ],
+     "when": "Once Veynar has fled or his authority is broken, the champion calls after Drelith.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 18,
+      "group": false
+     },
+     "success": "Drelith stops at the breach, straightens his gear and does not strike again; he still follows Veynar, but drops his shield and rank token in front of the champion: 'Obedience was easier.'",
+     "failure": "He covers Veynar's retreat with his sword and goes without a word.",
+     "reveals": "Drelith knows the difference between protecting people and protecting their choices; he chooses not to.",
+     "canon": "Drelith follows Veynar; his choice is visible."
+    }
+   ],
+   "events": [
+    {
+     "id": "the-dominion-surge",
+     "kind": "trap",
+     "trigger": "The start of each round while at least one coronation anchor stands and the villagers have not answered.",
+     "effect": "Each creature on the coronation floor other than Veynar and Drelith makes a DC 15 Wisdom saving throw; on a failure it has Disadvantage on attack rolls against Veynar until the start of the next round, and hears its own voice agreeing to the coronation. Each broken anchor lowers the DC by 2. A creature that has refused the crown aloud, or is Unconscious, is not affected.",
+     "counter": {
+      "how": "Break the anchors (AC 15, 30 HP, immune to Poison and Psychic damage; or an action and the check below within 5 feet), refuse the crown aloud, or bring the villagers to answer.",
+      "check": {
+       "ability": "Strength",
+       "skill": "Athletics",
+       "dc": 15,
+       "or": "Intelligence (Arcana) DC 15"
+      }
+     }
+    },
+    {
+     "id": "rusk-breaks-the-chain",
+     "kind": "reinforcements",
+     "trigger": "The start of round 3.",
+     "effect": "Rusk's flotilla rams Veynar's boom at the sea breach: Veynar's ship is lost and the villagers who sailed with Rusk reach the gallery. They are witnesses and voters, not combatants.",
+     "counter": {
+      "how": "Not a threat to the party: it takes away Veynar's ship, leaving the ring anchor as his only way out."
+     }
+    }
+   ]
+  }
+ ]
+}

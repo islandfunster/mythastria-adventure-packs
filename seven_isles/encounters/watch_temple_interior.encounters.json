@@ -1,0 +1,254 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "VI-WT-04",
+   "name": "Ossuary guardians and breach crabs",
+   "level": 1,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "The buried watch-temple holds the ward that reactivates the Ember road.",
+     "Core problem: Protective wards misfire and corrupted creatures threaten the settlement."
+    ],
+    "open": [
+     "The key to the vestry sea-chest hangs on a wrapped keeper's neck (searched after the fight).",
+     "When the fight in the nave starts, the breach crabs (VI-WT-05) join.",
+     "The same faint glow as the harbor crabs: a link the party can notice (flavour only).",
+     "A Potion of Healing lies in a rotted satchel among the shells (DC 10 Wisdom (Perception))."
+    ],
+    "clue_rooms": [
+     "VI-WT-03",
+     "VI-WT-06"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Skeleton",
+     "count": 2,
+     "int": 6,
+     "languages": [
+      "Understands Common plus one other language but can't speak"
+     ],
+     "cr": "1/4",
+     "roles": [
+      "melee"
+     ],
+     "does": "Wrapped temple keepers woken by the misfiring wards; they stand in the ossuary niches and loose shortbows into the dark nave at anyone the ward has not recognised.",
+     "start": [
+      [
+       21.0,
+       11.0
+      ],
+      [
+       21.0,
+       14.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       18,
+       10
+      ],
+      [
+       18,
+       13
+      ]
+     ]
+    },
+    {
+     "srd": "Giant Crab",
+     "count": 3,
+     "int": 1,
+     "languages": [],
+     "cr": "1/8",
+     "roles": [
+      "melee"
+     ],
+     "does": "Comes through the east breach from the flooded cistern when fighting starts in the nave, shells glowing faintly at the joints like the harbor's crabs.",
+     "start": [
+      [
+       20.0,
+       5.0
+      ],
+      [
+       22.0,
+       6.0
+      ],
+      [
+       21.0,
+       7.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       17,
+       4
+      ],
+      [
+       19,
+       5
+      ],
+      [
+       18,
+       6
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 175,
+    "band": "below Low",
+    "budget": {
+     "Low": 200,
+     "Moderate": 300,
+     "High": 400
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "moderate",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 0.5,
+     "deaths": 0,
+     "rounds_to_win": 6.3,
+     "party": "a test party (level 1, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dark (daylight only at the stair landing; the ward-stones give Dim light near the ward door)",
+    "water": "the broken cistern and the sea beyond the breach",
+    "flight": "a 20-ft vault",
+    "rewards": [
+     "archers in the dark",
+     "creatures with darkvision against a party without it",
+     "swimmers",
+     "grapplers"
+    ],
+    "gaps": "the rubble gap at the stair is 10 ft; the ossuary door 5 ft; the cistern breach 10 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "the dark nave and the ward-stones' unsure light",
+     "guardians who stop anyone the ward has not recognised",
+     "the key to the sea-chest on a keeper's neck",
+     "the measured difficulty (plays as moderate with the breach crabs, or the GM's target)",
+     "creatures from the sea through the breach",
+     "the corrupted glow that links them to the harbor"
+    ],
+    "filters": {
+     "themes": [
+      "undead",
+      "aquatic"
+     ],
+     "habitats": [
+      "Coastal",
+      "Underdark",
+      "Underwater",
+      "Urban"
+     ],
+     "roles": [
+      "melee"
+     ],
+     "tone_cap": "spooky",
+     "max_size": "Medium",
+     "movement": "walkers in the nave; swimmers through the breach"
+    },
+    "freshness": "a remix for returning players avoids Skeletons and Giant Crabs"
+   },
+   "not_simulated": [
+    "Skeleton: shooting with Advantage at unseen targets in the dark is played; their joining only on hearing the fight is the GM's",
+    "Giant Crab: Claw applies Grappled",
+    "Giant Crab: Swim speed"
+   ],
+   "routes": [
+    {
+     "id": "the-keepers-sign",
+     "approach": "lore",
+     "who": [
+      "Skeleton"
+     ],
+     "when": "A character who has seen the road-and-hand carving (the gate arch or the ward door) shows it, traced in dust or on a hand, before the skeletons loose.",
+     "check": {
+      "ability": "Intelligence",
+      "skill": "Religion",
+      "dc": 13,
+      "group": false
+     },
+     "success": "The keepers lower their bows and step back into their niches: the sign was the temple's own greeting. They stay still unless someone touches the wrapped dead.",
+     "failure": "The sign means nothing to them made that way; they loose as written.",
+     "reveals": "The keepers understood Common in life: one rasps, without a voice, the shape of the word 'passage'.",
+     "canon": "The temple counts passages, never reigns (the vestry tally board, VI-WT-03): the same distinction, shown."
+    },
+    {
+     "id": "lights-out",
+     "approach": "sneak past",
+     "who": [
+      "Skeleton"
+     ],
+     "when": "The party crosses the nave along the west pillars without light.",
+     "check": {
+      "ability": "Dexterity",
+      "skill": "Stealth",
+      "dc": 12,
+      "group": true
+     },
+     "success": "The party reaches the sealed ward door unseen; the skeletons keep watch on the stair.",
+     "failure": "A boot scrapes the mosaic; arrows come out of the dark.",
+     "cost": "The sea-chest's key stays on the keeper in the ossuary.",
+     "reveals": "Close to the door, the ward-stones brighten toward the champion's hand.",
+     "canon": "The ward door's recognition still happens; nothing locked is skipped."
+    },
+    {
+     "id": "block-the-breach",
+     "approach": "avoid",
+     "who": [
+      "Giant Crab"
+     ],
+     "when": "Before the fight in the nave, someone sees the breach and the water moving.",
+     "check": {
+      "ability": "Strength",
+      "skill": "Athletics",
+      "dc": 13,
+      "group": false
+     },
+     "success": "Rubble heaped into the breach keeps the crabs in the cistern; they scrape at it and stay there.",
+     "failure": "The heap slides into the water and the crabs come over it.",
+     "cost": "The satchel with the Potion of Healing stays beyond the heap.",
+     "reveals": "Nothing new.",
+     "canon": "Shrinks the temple's fight; the ward door and the ward chamber still wait."
+    },
+    {
+     "id": "quiet-feet",
+     "approach": "sneak past",
+     "who": [
+      "Giant Crab"
+     ],
+     "when": "The fight in the nave is avoided altogether (the skeletons were passed or calmed).",
+     "check": {
+      "ability": "Dexterity",
+      "skill": "Stealth",
+      "dc": 10,
+      "group": true
+     },
+     "success": "Without the noise of a fight the crabs never come up from the cistern.",
+     "failure": "Someone splashes at the breach; the crabs come.",
+     "reveals": "Nothing new.",
+     "canon": "The crabs answer noise, not the champion: the ward, not the beasts, is the temple's story."
+    }
+   ]
+  }
+ ]
+}

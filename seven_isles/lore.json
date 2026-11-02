@@ -1,0 +1,207 @@
+{
+ "format": "mythastria-lore/1",
+ "note": "The adventure's story for the GM's screen. GM only: never sent to the players' door. The secrets stay folded until the GM opens them.",
+ "title": "Seven Isles of the Hollow Regent",
+ "levels": "Levels 1-7; the party reaches level 8 after chapter 7 and plays chapter 8 at level 8.",
+ "tone": "Maritime fantasy mystery in a medieval-noir voice: ruined imperial grandeur, truth recovered from contradictory witnesses, damaged records and curated memories. Hope exists, but every useful truth carries a price. Salt, rain, iron, candles, bells, ink, ledgers, roads, graves, debts and crowns.",
+ "question": "Is authority something inherited, seized, or freely entrusted?",
+ "premise": [
+  "Seven meteor-stones fell in prehistory, each transforming one island. A later empire linked them into a governing network called the Hollow Regent: hollow because it has no legitimate will of its own. It was meant to preserve lawful succession and island balance until a rightful successor could choose what should follow.",
+  "Six islands are haunted ruins. Only Village Isle is still inhabited; its wards are failing, corrupted creatures are emerging, and forgotten sea roads are reopening.",
+  "When an ancient ward responds to a local champion, Lord Veynar finances an expedition to reclaim the stones. The evidence seems to say the champion is the lost royal heir. That reading is attractive, politically useful, and wrong.",
+  "Each island gives a ruin, a route-key to the next island, a moral choice with visible consequences, one accurate but incomplete clue, and a level after its objective. The islands come in a fixed order: each restored road opens the next.",
+  "The isles lie 30 to 50 miles apart in a treacherous mist, and Captain Rusk can sail anything he can see, but he cannot see this. He sails; the party finds the way. Each crossing is a day and a night, played on The Stage: start the On The Stage place as a social scene, which has no creatures. It has three legs, leaving the coast, the hazard at night in the mist, and landfall at dawn, and each leg is a skill check the players roll with their check control. Each isle's route-key gives the means. Each crossing also has a puzzle and three clues (a person, a thing found, something happening in the world). Working out the answer gives the party Advantage on that crossing's checks, so the way is never lost. A failed leg costs time, damage to the ship, Rusk's trust or a piece of evidence, never the route-key, and three failed legs mean the worst landing. A worst landing is a story setback with no game penalty: no damage and no lost levels. The party always reaches the isle, later or the hard way, and the GM decides how much the walk, the climb or the wait matters. The night aboard is a Long Rest and a scene on deck for the companions. The porpoises lead only the first crossing; afterward they ride the bow wave after a kind choice and vanish after a cruel one, never explained. If the table leaves the route, three spare guides wait: glowing plankton currents, a ghost ship keeping to the old road, and a giant sea turtle that carries the party to the worst landing. What the mist is stays a secret until chapter 8."
+ ],
+ "chapters": [
+  {
+   "chapter": 1,
+   "isle": "Village Isle",
+   "level": 1,
+   "places": [
+    "village_harbor",
+    "watch_temple_exterior",
+    "watch_temple_interior",
+    "ward_chamber"
+   ],
+   "function": "Ordinary world, inciting crisis, first apparent royal recognition.",
+   "core_problem": "Protective wards misfire and corrupted creatures threaten the settlement.",
+   "revelation": "A ward identifies the champion as 'the one who reaches.' Apparitions bow toward a point beyond or behind him.",
+   "route_key": "The watch-temple reactivates the Ember road.",
+   "moral_question": "Protect the village immediately, preserve evidence, or pursue the source before the crisis worsens?",
+   "crossing": "To Ember Isle: the grey backs. The clues: the ward-stone's light swings out to sea and lays a pale line on the water; the keeper's ledger in the ward chamber ends with a bearing and 'When the stone points to sea, follow the grey backs; they remember the road'; Lira or an old fisher remembers porpoises that only come when the stones are awake. The answer: where the line touches the mist, a pod of porpoises surfaces. The party must tell Rusk to follow them, even through the Teeth, a basalt reef in steaming water where they turn sharply. Rusk scoffs, then follows. Checks: leaving, Wisdom with Navigator's Tools, DC 10, from the ledger's bearing. The hazard, Wisdom (Animal Handling), DC 12, to keep the porpoises close, or Wisdom (Perception), DC 13, to see their turn. Landfall, Wisdom (Survival), DC 12. If a leg fails: the Unrepentant scrapes the reef and Rusk's trust suffers. Worst landing: wrecked on the black sand below the terraces, and the ship needs repair."
+  },
+  {
+   "chapter": 2,
+   "isle": "Ember Isle",
+   "level": 2,
+   "places": [
+    "ember_landing",
+    "lava_tubes",
+    "road_forge",
+    "smith_temple"
+   ],
+   "function": "Accept expedition leadership; establish Veynar and Kaelra as useful allies with concealed purposes.",
+   "core_problem": "Ancient foundries and unstable vents obstruct the road mechanism.",
+   "revelation": "Tovan's forge-stone is an Ember meteor fragment. The empire forged people into instruments as readily as weapons.",
+   "route_key": "Reignite and correctly temper the road mechanism without surrendering it entirely to Veynar.",
+   "moral_question": "What should be preserved when the forge can strengthen weapons but also revive an exploitative imperial system?",
+   "crossing": "To the Isle of Echoes: the counted bells. The clues: the tempered wheel sends a tone through the stone that rings back from drowned bell towers; the smith-temple's oath-plates record the bells' pattern; Rusk's legend, the Borrowed Name, says the fog imitates the first meaningful name spoken. The answer: count the bells against the oath-plates to find the way, and give the fog a name that means nothing to anyone. The crew's custom is a dead tax collector's. Then the voices in the fog, calling in friends' voices, can be ignored. Checks: leaving, Intelligence (Arcana), DC 13, or Wisdom with Navigator's Tools, DC 13, steering by the hum through the hull. The hazard, Wisdom (Insight), DC 13, to hold course against the voices. Landfall, Wisdom (Survival), DC 12. If a leg fails: the helm turns toward a voice and the ship loses a night. Worst landing: the wrong cove, and a long walk through the resonant valley to the bell cove."
+  },
+  {
+   "chapter": 3,
+   "isle": "Isle of Echoes",
+   "level": 3,
+   "places": [
+    "bell_cove",
+    "crystal_maze",
+    "amphitheater",
+    "memory_palace"
+   ],
+   "function": "Deepen the apparent-heir interpretation through true but curated memories.",
+   "core_problem": "Memories manifest as voices and scenes; truth and false inference become difficult to separate.",
+   "revelation": "The champion resembles figures and choices within royal memory, but the memories address him as 'you who came,' never 'you who returned.'",
+   "route_key": "Assemble a truthful sequence of resonant memories rather than the most flattering sequence.",
+   "moral_question": "Is a useful public story worth preserving when the evidence does not fully support it?",
+   "crossing": "To Broken Sky Isle: the singing compass. The clues: the truthful sequence of memories leaves the party a crystal from the maze, which hums louder toward Broken Sky, and only if the sequence was true; Rusk's legend, the Ninth Flash, says the lightning follows eight pulses and a ninth, silent flash shows the safe approach. The answer: sweep the crystal across the horizon, then count the flashes and steer only on the silent ninth. A flattering sequence leaves the crystal dumb, and the party must rely on the legend alone. Checks: leaving, Wisdom (Perception) or Intelligence (Arcana), DC 13, sweeping the crystal. The hazard, Intelligence (Investigation), DC 13, counting the flashes, or stargazing with Navigator's Tools, DC 15, in the gap after the ninth. Landfall, Wisdom (Survival), DC 13. If a leg fails: the squall drives the ship toward the cliffs and costs rigging. Worst landing: grounded on the plateau's rocky foot, with a climb to the citadel bridge."
+  },
+  {
+   "chapter": 4,
+   "isle": "Broken Sky Isle",
+   "level": 4,
+   "places": [
+    "storm_citadel"
+   ],
+   "function": "Reveal Veynar's willingness to sacrifice lives or irreplaceable evidence; fracture Kaelra's loyalty.",
+   "core_problem": "The imperial weather network is unstable and weaponized.",
+   "revelation": "The champion can command a route through the storm but cannot command the island as sovereign.",
+   "route_key": "Redirect the storm long enough to open the passage to the Silent Library.",
+   "moral_question": "Rescue trapped people or secure strategic records before the weather engine destroys one of them; avoid an easy solution that preserves everything.",
+   "crossing": "To the Silent Library: the storm's eye and the moon's door. The clues: the redirected storm opens a calm lane where, for one night, the stars show; the citadel's record tells how the moon locks work; Kaelra reads the tide tables, and her reading favours reaching the records first. The answer: fix the ship by the stars in the eye, then choose the tide from the record, not from Kaelra's word. Compare the two and the party can catch her shading it. Checks: leaving, Wisdom (Survival), DC 13, to hold the calm lane. The hazard, the tidal race, Strength (Athletics), DC 13. Landfall, stargazing with Navigator's Tools, DC 15, to reach the moon lock at the right tide. If a leg fails: they reach the lock at the wrong tide. Worst landing: the lower archive is flooded, and the party waits or swims."
+  },
+  {
+   "chapter": 5,
+   "isle": "The Silent Library",
+   "level": 5,
+   "places": [
+    "tidal_archive"
+   ],
+   "function": "Bring the heir/warden distinction almost into focus and expose Kaelra's censorship.",
+   "core_problem": "Records are corrupted, deliberately altered, and accessible only during changing tides.",
+   "revelation": "Law distinguishes the bearer of succession from the bearer of passage. Someone is preserved, but identity remains unknown.",
+   "route_key": "Recover the route to the hidden isle from records distributed across mutually flooding sections.",
+   "moral_question": "Publish a flattering incomplete translation, suppress it, or reveal the uncertainty and risk division.",
+   "crossing": "To the hidden isle: the chart in pieces. The clues: the recovered route is in parts from sections that flood in turn; the empire hid the way in the blank spaces; Rusk recognises a coastline he swore was a legend; the water turns glass-still where the chart says to turn. The answer: lay the pieces together and read the safe channel in what is not drawn, through sea stacks in still mist where sound dies, into a sea cave at low water. Each missing piece leaves a gap the party must reason across. Checks: leaving, Intelligence (Investigation or History), DC 13, plus 2 for each missing piece of the chart. The hazard, Wisdom (Perception or Survival), DC 13, through the stacks. Landfall, Wisdom (Survival), DC 12, at the sea cave at low water. If a leg fails: a tide is lost among the stacks. Worst landing: the outer shore, with a climb over the ridge into the sealed gardens."
+  },
+  {
+   "chapter": 6,
+   "isle": "Sanctuary Isle",
+   "level": 6,
+   "places": [
+    "preservation_vault"
+   ],
+   "function": "The reveal (see the GM-only secrets); complete Kaelra's costly truth.",
+   "core_problem": "The preservation system treats identity, memory, and bloodline as resources.",
+   "revelation": "GM only: see the secrets.",
+   "route_key": "The sleeper's awakening and the Free Warden's voluntary protection open the final Crown Road.",
+   "moral_question": "Wake the sleeper under unsafe conditions, leave them within the failing system, or find a costly method that preserves their ability to choose.",
+   "crossing": "To Shattered Crowns Isle: the Crown Road. The clues: the awakening lights drowned lantern-stones that kindle one by one just under the water, so finding the way is no puzzle here; Rusk marks Veynar's chain across the road. The puzzle is the chain. The party must work out a way past it from what they have learned and who now stands with them: a night run, the chain's fastening, or a word with the crews. Checks: leaving needs none: the lantern-stones show the way. The hazard, past the chain: Dexterity (Stealth) for a night run, Strength (Athletics) or Thieves' Tools on the fastening, or Charisma (Persuasion) with the crews, DC 14. Landfall, Dexterity (Stealth), DC 13, to land unseen. If a leg fails: the party is seen. Worst landing: the occupation is ready at the landing."
+  },
+  {
+   "chapter": 7,
+   "isle": "Shattered Crowns Isle",
+   "level": 7,
+   "places": [
+    "lion_causeway",
+    "shattered_crowns_finale"
+   ],
+   "function": "Final rejection of manufactured kingship; prevent single-person control of the network.",
+   "core_problem": "Veynar uses the dominion-stone and royal machinery to manufacture consent.",
+   "revelation": "The Hollow Regent was built to preserve succession, not to select or create a king.",
+   "route_key": "Rusk breaks the blockade; Kaelra destroys her control network; the champion rejects Veynar's coronation; the heir sets a boundary.",
+   "moral_question": "End state: Veynar and Drelith escape with limited power (a fragment of the dominion-stone, the level-8 hook). No one controls all seven stones; a new compact says no stone, regent, heir or warden may command the isles alone."
+  },
+  {
+   "chapter": 8,
+   "isle": "Beneath the Throne Island",
+   "level": 8,
+   "places": [
+    "on_the_stage"
+   ],
+   "function": "The compact's last act, and the escape that ends the mist.",
+   "core_problem": "The compact can't hold while the Regent still runs in the old waterworks under the island.",
+   "revelation": "The mist was the Regent's veil, and it was holding the sea out of the works.",
+   "route_key": "Aelwyn asks the party to go down and shut off the Regent. The Drowned Way is the only way back out.",
+   "moral_question": "Should the party end what has shielded the isles for centuries, knowing the price, and leave the isles open to the world?",
+   "escape": "Played on The Stage: start the On The Stage place as a social scene, which has no creatures. The players roll with their check control, and the GM calls each DC and rules on it. Water Breathing helps with breath, but not with the currents or the dark. Exposure runs from 0 to 6. It rises by 1 for each failed check, loud solution or long delay, once for each cause, and falls by 1, once a stage, for a quiet solution or one character helping another. At 4 the guardian, a Water Elemental, wakes; at 6 it reaches the Last Sluice. Keep the number to yourself and let the players hear it in the water. Going down: the party finds the Regent's works and shuts them off. There's no roll for that: it's their choice. When the Regent stops, the veil falls and the sea comes in. The Breathing Gallery: air bells keep a few breaths along a flooding gallery, and the middle one has failed. Repair it: Intelligence (Investigation) or Strength (Athletics), DC 12. Find the way through the silt: Wisdom (Perception or Survival), DC 13. A Hunter Shark hunts the gallery; slipping past it is Dexterity (Stealth), DC 13. The Undertow Gates: the flood drives a current through the gates. Work the gate lever: Strength (Athletics), DC 13. Cross along the guide chains: Strength (Athletics) or Dexterity (Acrobatics), DC 13, for each character. A character can carry an unconscious ally, or help another for Advantage. The Last Sluice: the imperial drain is the only way out. Someone must work the winch while the others go through the channel: Strength (Athletics), DC 13, for each trip. Once anyone is out, they can run the outer winch, so the last character can leave too. Failures are setbacks. If the guardian is awake, each failed check after that costs one character something the party will miss: lost gear, a spent spell slot, a level of Exhaustion, or an ally who has to be carried. If it reaches the sluice, someone must hold it off while the rest get out, and that character comes out last with the worst of it. GM's note: this can be deadly if you want it to be. For a harder table, let the guardian or the flood kill a character who is left behind or who fails at the sluice, and tell the players before they go down. The ending: the party comes up into clear air. For the first time in centuries the isles can see each other across the water, and Rusk can sail anywhere he can see."
+  }
+ ],
+ "cast": [
+  {
+   "name": "The Champion",
+   "role": "The player's hero; secretly the Free Warden",
+   "notes": "Protective, decisive, privately drawn to being necessary. False belief: if the islands need him, he must have been born to rule them. Need: protecting another person's freedom is not a lesser destiny than kingship. Early words of roads, shields and action; later of thresholds, permission and protected choice."
+  },
+  {
+   "name": "Lord Veynar",
+   "role": "Patron and nemesis",
+   "notes": "Calm, elegant; believes stewardship creates ownership. Adjusts his rings when he turns desire into necessity; describes consequences as weather; never accepts a freedom that obstructs his design. The champion's shadow: protection treated as a right to command."
+  },
+  {
+   "name": "Captain Drelith",
+   "role": "Veynar's enforcer",
+   "notes": "Cold, efficient duelist and expedition commander. Cracks his knuckles before violence, straightens his gear after. Obedience lets him feel innocent; short declarative sentences. Protects people efficiently, but not their right to choose."
+  },
+  {
+   "name": "Mistress Kaelra",
+   "role": "The unfaithful witness",
+   "notes": "Magnetic illusionist and scholar who treats truth as leverage; threads, mirrors, lanterns, masks and knots. Calls the champion 'Your Perhaps-Majesty'. Never fabricates the heir evidence: curates true evidence dishonestly. Redeemed when she gives away the truth that could have kept her power; not forgiven at once."
+  },
+  {
+   "name": "Captain Brannoc Rusk",
+   "role": "Smuggler, captain of the Unrepentant",
+   "notes": "Greedy, profane, vindictive, loyal to a narrow code: a fare accepted is a life entrusted; never sells captives, children or refugees. No heart of gold, no redemption. Opposes Veynar because no crown owns the sea: 'Veynar put a chain across my water. I have come to remove it.'"
+  },
+  {
+   "name": "Elder Sira",
+   "role": "Keeper of incomplete songs",
+   "notes": "Patient mentor; teaches through nets, bread, weather, mending and old chants. Never lies, never turns fragments into comforting certainty."
+  },
+  {
+   "name": "Tovan",
+   "role": "The village blacksmith",
+   "notes": "Gruff; mutters to his tools, distrusts ceremony and prophecy, values work. Frightened by the evolving meteor-forge."
+  },
+  {
+   "name": "Lira",
+   "role": "The healer",
+   "notes": "Kindness disciplined, not naive; asks before she touches anyone; sees fear and coercion and never exploits them. Aid without ownership."
+  },
+  {
+   "name": "Uncle Garran",
+   "role": "The bitter veteran",
+   "notes": "Challenges glory with its cost in ordinary lives; loves the champion and hides fear as discouragement. Usually right about the danger, too gloomy about the outcome."
+  },
+  {
+   "name": "Selric",
+   "role": "The scholar of dangerous certainty",
+   "notes": "Offers questions and the other translation; wants evidence no ruler can rewrite. Keeps the mystery fair."
+  }
+ ],
+ "secrets": [
+  {
+   "name": "The Sleeper",
+   "reveal": "Chapter 6, Sanctuary Isle: both truths in one scene, never one alone",
+   "text": "Princess Aelwyn is alive in magical suspension on Sanctuary Isle. When the empire fell she bound herself to the Hollow Regent and stabilised the seven stones; centuries of preservation have nearly made her an instrument of dynastic continuity. The wards recognise two people for two reasons: Aelwyn is the rightful heir; the champion is the Free Warden, the path to the heir and the protector of her freedom to choose. Kaelra deciphers the vault first and states the whole truth. Aelwyn wakes weak, out of her time, unsure which memories are hers; her first act is to refuse to be owned by Veynar, the champion or the Regent. She is warm, observant, dryly funny; remembers servants' names before titles; counts silently to seven before a formal decision; says 'we' when frightened and 'I' when honest. Before Sanctuary she is only the Sleeper, the Last Light, the one preserved, the second heartbeat, or the presence beneath the ward: never her name, a feminine pronoun, a royal title, or Sanctuary as her place."
+  },
+  {
+   "name": "The Wardbound",
+   "reveal": "Chapter 7, the Shattered Crowns finale",
+   "text": "The seventh stone is not in a vault under Village Isle. It refused a single keeper and dispersed itself among the refugees it sheltered; their descendants carry it as thousands of tiny ward-sparks. The living community is the stone's vessel, and no one villager knows the whole truth. Fair-play clues only: Sira's oldest chant has seven regional cadences; Tovan uses an Ember tempering gesture he cannot explain; Lira's remedies mix plants from isolated islands; Garran knows a formation preserved only in a Broken Sky relief; Selric finds the same family marks in refugee tallies from different islands; the village wards strengthen when many residents make the same free choice and weaken when one speaker decides for everyone. In the finale the stone answers only when the villagers knowingly choose to join the new compact: their consent, not their ancestry, denies Veynar sole authority."
+  },
+  {
+   "name": "The Mist",
+   "reveal": "Chapter 8, the Drowned Way",
+   "text": "The empire raised the mist through the seven stones, as the Regent's veil: it hides the isles until a rightful successor comes. Each restored road opens the next isle because each route-key parts the veil a little. That is why the wards failing and the sea roads reopening happen together. Aelwyn has held the stones steady for centuries, and so without knowing it she has held the mist too; it is part of what the vault was spending. The veil also holds the sea out of the Regent's machinery, old imperial waterworks below the Throne Island. The compact can't hold while the Regent still runs, so once the party reaches level 8 Aelwyn asks them to go down and shut it off: the compact's last act, chosen freely, with the price known. When the Regent stops, the veil falls for good and the sea comes in. The party escapes through the works, the Drowned Way: the Breathing Gallery as the air stations fail, the Undertow Gates as the flood drives currents through them, and the Last Sluice, the imperial drain and the only exit. The guardian is the Regent's last defence, waking as the works fail. This holds whether Veynar escaped or was captured. No one in the story knows this before chapter 8: Rusk only knows he cannot see through it, and Kaelra has never found it written."
+  }
+ ]
+}

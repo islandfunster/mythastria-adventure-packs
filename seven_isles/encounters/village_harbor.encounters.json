@@ -1,0 +1,204 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "VI-HB-01",
+   "name": "Out of the harbor",
+   "level": 1,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Core problem: Protective wards misfire and corrupted creatures threaten the settlement.",
+     "Moral question: protect the village immediately, preserve evidence, or pursue the source before the crisis worsens."
+    ],
+    "open": [
+     "The crabs came when the harbor ward-stone's light faltered; its light leans uphill toward the buried watch-temple (VI-HB-02).",
+     "Villagers shelter with Lira in the net store (VI-HB-03); someone is still missing on the quay.",
+     "Rusk's Unrepentant rides at the pier's end, its gangplank hauled in: no one boards without a fare.",
+     "After the fight Tovan the blacksmith presses a fist-sized, star-flecked lump of black forge-stone on the champion: 'Keep the road honest.' He can't say where it came from; it was on his anvil block when he inherited the forge. It is the stone the road forge's wheel needs in chapter 2."
+    ],
+    "clue_rooms": [
+     "VI-HB-02"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Giant Crab",
+     "count": 5,
+     "int": 1,
+     "languages": [],
+     "cr": "1/8",
+     "roles": [
+      "melee"
+     ],
+     "does": "Heaves out of the harbor along the quay and the pier, shells glowing blue at the joints where the misfiring ward touched them; grabs whoever is nearest and drags them toward the water.",
+     "start": [
+      [
+       14.0,
+       3.0
+      ],
+      [
+       15.0,
+       5.0
+      ],
+      [
+       7.0,
+       8.0
+      ],
+      [
+       11.0,
+       8.0
+      ],
+      [
+       20.0,
+       9.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       13,
+       2
+      ],
+      [
+       14,
+       4
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       10,
+       7
+      ],
+      [
+       19,
+       8
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 125,
+    "band": "below Low",
+    "budget": {
+     "Low": 200,
+     "Moderate": 300,
+     "High": 400
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "moderate",
+     "runs": 10,
+     "wins": 9,
+     "losses": 1,
+     "out_of_rounds": 0,
+     "drops_per_run": 1.2,
+     "deaths": 0,
+     "rounds_to_win": 5.9,
+     "party": "a test party (level 1, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Bright (grey harbor daylight)",
+    "water": "the harbor along the quay and around the pier; deep water off the pier's end",
+    "flight": "open sky",
+    "rewards": [
+     "creatures that climb out of water",
+     "grapplers that pull characters to the edge"
+    ],
+    "gaps": "the lane and the boathouse door are 5 ft; the quay is open"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "the harbor in daylight",
+     "creatures from the sea, corrupted by the misfiring ward (the faint blue glow)",
+     "the ward-stone plaza's leaning light as the clue to the watch-temple",
+     "villagers in danger, so that acting now matters"
+    ],
+    "filters": {
+     "themes": [
+      "aquatic"
+     ],
+     "habitats": [
+      "Coastal",
+      "Underwater"
+     ],
+     "roles": [
+      "melee"
+     ],
+     "tone_cap": "spooky",
+     "max_size": "Large",
+     "movement": "swimmers that can climb onto the quay fit best"
+    },
+    "freshness": "a remix for returning players avoids Giant Crabs (the watch-temple's breach has them too)"
+   },
+   "not_simulated": [
+    "Giant Crab: Claw applies Grappled",
+    "Giant Crab: Swim speed"
+   ],
+   "routes": [
+    {
+     "id": "ring-the-stone",
+     "approach": "help",
+     "who": [
+      "Giant Crab"
+     ],
+     "when": "A character reaches the ward-stone plaza (VI-HB-02) while the crabs are on the quay.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 12,
+      "group": false
+     },
+     "success": "The character gets several villagers to stand together by the stone instead of fleeing: its light steadies, and the crabs flinch from it and slide back into the harbor. Only those already grappling someone fight on.",
+     "failure": "One frightened voice shouts everyone back indoors; the stone stutters and the crabs come on as written.",
+     "reveals": "The stone answers many people choosing the same thing, and falters when one voice decides for all. Describe it; never explain it.",
+     "canon": "A fair-play clue for the GM-only truth about the village, shown and not told; it also answers the moral question by protecting the village first."
+    },
+    {
+     "id": "fish-guts",
+     "approach": "distract",
+     "who": [
+      "Giant Crab"
+     ],
+     "when": "Anyone near the fish market stalls or the boathouse, where the day's catch lies gutted.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Animal Handling",
+      "dc": 11,
+      "group": false
+     },
+     "success": "Buckets of offal tipped off the far end of the quay draw the crabs away from the people: they join the fight only from the third round, and only if someone stays on the quay.",
+     "failure": "The crabs turn on the bucket-bearer and close at once.",
+     "reveals": "Nothing new: the crabs are only hungry, and wrong.",
+     "canon": "Protects the villagers without solving the source: the watch-temple still waits."
+    },
+    {
+     "id": "rusks-fare",
+     "approach": "help",
+     "who": [
+      "Giant Crab"
+     ],
+     "when": "A character hails the Unrepentant from the pier.",
+     "condition": "A fare Rusk accepts (coin, a favour owed, or a promise he can collect on). Rusk never names his price during the danger.",
+     "success": "Rusk's crew drop a net and boathooks over the side: the crabs on the pier are pinned and pushed back into the water. Rusk names his price later, and expects it paid.",
+     "failure": "Rusk shrugs: 'No fare, no favour.' The fight runs as written.",
+     "cost": "A debt to Brannoc Rusk, collected in a later chapter.",
+     "reveals": "Rusk: 'A fare accepted is a life entrusted. A fare refused is your own business.'",
+     "canon": "Establishes Rusk's narrow code (Freedom Without Virtue) at the party's first meeting."
+    }
+   ]
+  }
+ ]
+}

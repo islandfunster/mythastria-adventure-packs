@@ -1,0 +1,148 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "VI-WT-10",
+   "name": "The road's guardian",
+   "level": 1,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Revelation: A ward identifies the champion as 'the one who reaches.' Apparitions bow toward a point beyond or behind him.",
+     "Route-key: The watch-temple reactivates the Ember road."
+    ],
+    "open": [
+     "Placing the champion's hand on the carved hand wakes the Ember road; the party advances to level 2 after the watch-temple objective.",
+     "The west shrine's relief and the east shrine's ledger (VI-WT-09) are evidence for later chapters."
+    ],
+    "clue_rooms": [
+     "VI-WT-08",
+     "VI-WT-09"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Animated Armor",
+     "count": 1,
+     "int": 1,
+     "languages": [],
+     "cr": "1",
+     "roles": [
+      "soldier"
+     ],
+     "does": "Stands before the carved open hand in the road alcove and defends it from anyone the ward has not named; kneels if the champion touches the hand first.",
+     "start": [
+      [
+       11.0,
+       3.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       9,
+       2
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 200,
+    "band": "Low",
+    "budget": {
+     "Low": 200,
+     "Moderate": 300,
+     "High": 400
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "low",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 0.0,
+     "deaths": 0,
+     "rounds_to_win": 3.3,
+     "party": "a test party (level 1, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "Animated Armor at high hit points (54, hit dice (6d8 + 6)) (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dim blue ward-light in the hall; dark in the alcove",
+    "water": "none",
+    "flight": "a 25-ft vault in the hall; 10 ft in the alcove",
+    "rewards": [
+     "a single sturdy guardian in a narrow place"
+    ],
+    "gaps": "the alcove is 10 ft wide"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "a guardian of the route-key that stands down for the one the ward named",
+     "the ward's words 'the one who reaches' and the apparitions bowing past the champion (never explained)",
+     "the route-key: the champion's hand on the carved hand"
+    ],
+    "filters": {
+     "themes": [
+      "construct"
+     ],
+     "habitats": [
+      "Urban"
+     ],
+     "roles": [
+      "soldier"
+     ],
+     "tone_cap": "spooky",
+     "max_size": "Large",
+     "movement": "walkers"
+    },
+    "freshness": "a remix for returning players avoids Animated Armor (the smith-temple has three)"
+   },
+   "not_simulated": [
+    "Animated Armor: kneeling when the champion touches the hand first is the GM's ruling"
+   ],
+   "routes": [
+    {
+     "id": "the-named-hand",
+     "approach": "help",
+     "who": [
+      "Animated Armor"
+     ],
+     "when": "The champion goes to the carved hand before anyone attacks the armor.",
+     "condition": "The champion touches the carved hand first.",
+     "success": "The armor kneels and does not fight; the road wakes under the champion's hand.",
+     "failure": "Someone else reaches for the hand first: the armor fights as written.",
+     "reveals": "The armor kneels toward the champion's hand, and its helm turns, as the apparitions did, to a point behind him.",
+     "canon": "The first apparent recognition, literally true and incomplete: the core of Chapter 1's revelation."
+    },
+    {
+     "id": "read-the-inscription",
+     "approach": "lore",
+     "who": [
+      "Animated Armor"
+     ],
+     "when": "A character reads the inscription over the alcove ('the road keeps for the one who reaches') before stepping in.",
+     "check": {
+      "ability": "Intelligence",
+      "skill": "History",
+      "dc": 12,
+      "group": false
+     },
+     "success": "The character understands that only the one the ward named should approach; the others wait outside and the guardian stays still.",
+     "failure": "The old hand is misread; the party crowds in and the armor turns on them.",
+     "reveals": "Selric, if present: 'It says the road keeps. Not the crown. The road.'",
+     "canon": "Fair play: the inscription says passage, not reign."
+    }
+   ]
+  }
+ ]
+}

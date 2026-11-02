@@ -1,0 +1,177 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "BS-SC-02",
+   "name": "The storm-carved sentinels",
+   "level": 4,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Function: Reveal Veynar's willingness to sacrifice lives or irreplaceable evidence; fracture Kaelra's loyalty.",
+     "Core problem: The imperial weather network is unstable and weaponized."
+    ],
+    "open": [
+     "Drelith has barred the trapped gallery from outside on Veynar's order (BS-SC-03); Kaelra sees him do it and says nothing yet.",
+     "The engine's two levers, a road and a crown (BS-SC-05): only the road answers the champion."
+    ],
+    "clue_rooms": [
+     "BS-SC-03",
+     "BS-SC-04"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Gargoyle",
+     "count": 3,
+     "int": 6,
+     "languages": [
+      "Primordial (Terran)"
+     ],
+     "cr": "2",
+     "roles": [
+      "skirmisher"
+     ],
+     "does": "The citadel's storm-carved sentinels, crouched on the terrace's roof-stones like statues; unfold and fly between the lightning obelisks to guard the engine stair.",
+     "start": [
+      [
+       12.0,
+       11.0
+      ],
+      [
+       17.0,
+       11.0
+      ],
+      [
+       15.0,
+       14.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       10,
+       9
+      ],
+      [
+       15,
+       9
+      ],
+      [
+       13,
+       12
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 1350,
+    "band": "Low",
+    "budget": {
+     "Low": 1000,
+     "Moderate": 1500,
+     "High": 2000
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "moderate",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 0.7,
+     "deaths": 0,
+     "rounds_to_win": 6.0,
+     "party": "a test party (level 4, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dim (storm light everywhere)",
+    "water": "none; rain",
+    "flight": "open storm sky over the terrace",
+    "rewards": [
+     "fliers among tall obelisks",
+     "creatures that look like statues"
+    ],
+    "gaps": "the broken bridge's lip and the engine stair are 10 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "sentinels that guard the engine stair",
+     "the storm and the lightning obelisks",
+     "the trapped gallery and the record tower both in danger",
+     "the measured difficulty (plays as moderate, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "elemental",
+      "flying"
+     ],
+     "habitats": [
+      "Mountain",
+      "Urban"
+     ],
+     "roles": [
+      "skirmisher"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Large",
+     "movement": "fliers fit best"
+    },
+    "freshness": "a remix for returning players avoids Gargoyles (Ember Isle had one)"
+   },
+   "not_simulated": [
+    "Gargoyle: False Appearance",
+    "Dim Light: Disadvantage on sight-based Perception (the GM's)"
+   ],
+   "routes": [
+    {
+     "id": "command-the-storm",
+     "approach": "intimidate",
+     "who": [
+      "Gargoyle"
+     ],
+     "when": "The champion, standing between the obelisks, orders the sentinels aside in the empire's name.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Intimidation",
+      "dc": 15,
+      "group": false
+     },
+     "success": "The sentinels hesitate, then part to clear the engine stair for him alone: they will let him pass to the road lever, and no one else. The party must follow under their watch.",
+     "failure": "They do not know his voice as a master's; they dive from the obelisks.",
+     "reveals": "The sentinels obey the champion as a road-opener and not as a lord: they will not let him past the crown lever.",
+     "canon": "The revelation in small: he can command a route, not the island."
+    },
+    {
+     "id": "the-gallery-first",
+     "approach": "avoid",
+     "who": [
+      "Gargoyle"
+     ],
+     "when": "The party hears the fists on the gallery door and goes there first, round the terrace's edge.",
+     "check": {
+      "ability": "Dexterity",
+      "skill": "Stealth",
+      "dc": 13,
+      "group": true
+     },
+     "success": "The party reaches the barred gallery unseen and can lift the bar (an action); the sentinels stay on the terrace.",
+     "failure": "The sentinels spot them on the edge; the fight starts with the party between the obelisks and the gallery.",
+     "cost": "Drelith sees the bar lifted against Veynar's order: 'That was not your decision.'",
+     "reveals": "Drelith barred the door on Veynar's order; Kaelra was watching.",
+     "canon": "Puts the moral question in play early and starts Kaelra's fracture."
+    }
+   ]
+  }
+ ]
+}

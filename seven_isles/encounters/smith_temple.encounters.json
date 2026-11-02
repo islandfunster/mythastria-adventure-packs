@@ -1,0 +1,171 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "EM-ST-02",
+   "name": "The temple's keepers",
+   "level": 2,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Regional identity: smith-temple.",
+     "Revelation: Tovan's forge-stone is an Ember meteor fragment. The empire forged people into instruments as readily as weapons.",
+     "Moral question: What should be preserved when the forge can strengthen weapons but also revive an exploitative imperial system?"
+    ],
+    "open": [
+     "The side chapels' walls of names with numbers instead of families (EM-ST-03) and the meteor altar's missing fist-sized chip (EM-ST-04) let the party draw the conclusion themselves.",
+     "Veynar, if present, asks to take the reliquary's oath-plates 'for safekeeping' (EM-ST-05)."
+    ],
+    "clue_rooms": [
+     "EM-ST-03",
+     "EM-ST-04"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Animated Armor",
+     "count": 3,
+     "int": 1,
+     "languages": [],
+     "cr": "1",
+     "roles": [
+      "soldier"
+     ],
+     "does": "Three suits in the leather aprons and harness of the temple's smiths stand between the hammer-saints; they step forward when anyone passes the second pair of statues, and never leave the temple.",
+     "start": [
+      [
+       12.0,
+       11.0
+      ],
+      [
+       15.0,
+       11.0
+      ],
+      [
+       14.0,
+       9.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       10,
+       9
+      ],
+      [
+       13,
+       9
+      ],
+      [
+       12,
+       7
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 600,
+    "band": "Moderate",
+    "budget": {
+     "Low": 400,
+     "Moderate": 600,
+     "High": 800
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "high",
+     "runs": 10,
+     "wins": 9,
+     "losses": 0,
+     "out_of_rounds": 1,
+     "drops_per_run": 1.5,
+     "deaths": 0,
+     "rounds_to_win": 6.4,
+     "party": "a test party (level 2, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as high); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dim red light from the nave's lamps that never went out",
+    "water": "none",
+    "flight": "a tall nave",
+    "rewards": [
+     "sturdy guardians in a long hall"
+    ],
+    "gaps": "the bronze doors are 10 ft; the chapels 5 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "keepers in the harness of the temple's smiths",
+     "the walls of numbered names and the meteor altar",
+     "the measured difficulty (plays as high as built, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "construct"
+     ],
+     "habitats": [
+      "Urban"
+     ],
+     "roles": [
+      "soldier"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Medium",
+     "movement": "walkers"
+    },
+    "freshness": "a remix for returning players avoids Animated Armor"
+   },
+   "not_simulated": [
+    "Animated Armor: not leaving the temple (the GM's)"
+   ],
+   "routes": [
+    {
+     "id": "kneel-at-the-anvils",
+     "approach": "lore",
+     "who": [
+      "Animated Armor"
+     ],
+     "when": "A character notices the frieze over the porch (smiths kneeling at anvils) and kneels the same way before passing the statues.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Religion",
+      "dc": 13,
+      "group": false
+     },
+     "success": "The keepers take the party for workers being brought to consecration and let them pass in silence. The party walks the temple as the forge's 'tools' once did.",
+     "failure": "The kneeling is wrong; the keepers step forward.",
+     "cost": "Tovan, if he hears of it, will not speak for an hour.",
+     "reveals": "The temple let through only those who knelt as instruments.",
+     "canon": "The revelation, felt: the temple consecrated people as tools."
+    },
+    {
+     "id": "through-the-chapels",
+     "approach": "sneak past",
+     "who": [
+      "Animated Armor"
+     ],
+     "when": "The party keeps to the side chapels instead of the nave.",
+     "check": {
+      "ability": "Dexterity",
+      "skill": "Stealth",
+      "dc": 11,
+      "group": true
+     },
+     "success": "The party reaches the meteor altar without passing the second pair of statues.",
+     "failure": "A lamp topples in a chapel; the keepers turn.",
+     "reveals": "The party reads the walls of numbered names on the way (EM-ST-03).",
+     "canon": "The chapels carry the clue; nothing is skipped."
+    }
+   ]
+  }
+ ]
+}

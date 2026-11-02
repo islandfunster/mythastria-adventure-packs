@@ -1,0 +1,213 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "EC-AM-03",
+   "name": "The applauding dead",
+   "level": 3,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Function: Deepen the apparent-heir interpretation through true but curated memories.",
+     "Moral question: Is a useful public story worth preserving when the evidence does not fully support it?"
+    ],
+    "open": [
+     "When the wight falls the play begins without it: a traveller arrives by sea, a gate opens, a crowd cheers (EC-AM-04). The traveller is addressed only as 'the one who came.'",
+     "Kaelra calls the play a prophecy; Selric asks who chose which scenes to keep."
+    ],
+    "clue_rooms": [
+     "EC-AM-04"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Wight",
+     "count": 1,
+     "int": 10,
+     "languages": [
+      "Common plus one other language"
+     ],
+     "cr": "3",
+     "roles": [
+      "brute"
+     ],
+     "does": "The theater's last master of ceremonies in a steward's chain; still runs the performance, and points the audience at anyone who interrupts it.",
+     "start": [
+      [
+       13.0,
+       6.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       12,
+       4
+      ]
+     ]
+    },
+    {
+     "srd": "Zombie",
+     "count": 4,
+     "int": 3,
+     "languages": [
+      "Understands Common plus one other language but can't speak"
+     ],
+     "cr": "1/4",
+     "roles": [
+      "melee"
+     ],
+     "does": "The audience in rotted finery, applauding a play no one performs; rise and shamble at whoever the wight points to.",
+     "start": [
+      [
+       10.0,
+       12.0
+      ],
+      [
+       16.0,
+       12.0
+      ],
+      [
+       11.0,
+       14.0
+      ],
+      [
+       15.0,
+       14.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       9,
+       9
+      ],
+      [
+       15,
+       9
+      ],
+      [
+       10,
+       11
+      ],
+      [
+       14,
+       11
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 900,
+    "band": "Moderate",
+    "budget": {
+     "Low": 600,
+     "Moderate": 900,
+     "High": 1600
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "moderate",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 1.2,
+     "deaths": 0,
+     "rounds_to_win": 5.3,
+     "party": "a test party (level 3, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dim (valley fog)",
+    "water": "none",
+    "flight": "open sky above the fog",
+    "rewards": [
+     "a leader with a crowd of slow minions",
+     "half cover behind broken benches"
+    ],
+    "gaps": "the tiers' stairs are 5 ft; the orchestra is open"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "the fog and the applauding audience",
+     "a master of ceremonies who still runs the play",
+     "the play that follows the fight: true and curated, addressing 'the one who came'",
+     "the measured difficulty (plays as moderate, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "undead"
+     ],
+     "habitats": [
+      "Urban"
+     ],
+     "roles": [
+      "brute",
+      "melee"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Medium",
+     "movement": "walkers"
+    },
+    "freshness": "a remix for returning players avoids the Wight and Zombies"
+   },
+   "not_simulated": [
+    "Zombie: Undead Fortitude",
+    "Wight: Sunlight Sensitivity (none here, in the fog)"
+   ],
+   "routes": [
+    {
+     "id": "take-a-bow",
+     "approach": "perform",
+     "who": [
+      "Wight"
+     ],
+     "when": "A character steps onto the stage and performs before the wight points.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Performance",
+      "dc": 14,
+      "group": false
+     },
+     "success": "The wight is delighted: an actor at last. It bows, the audience applauds, and the play begins with the performer in it. The dead sit and watch; no one fights while the play lasts.",
+     "failure": "The wight hisses at the poor show and points: the audience rises.",
+     "lines": [
+      "Wight: 'Places! Places! The one who came is late again.'"
+     ],
+     "reveals": "The performer is cast as 'the one who came' and walks the scenes; the scenes the play leaves out are the ones that would complicate it.",
+     "canon": "Delivers the function: true memories, curated."
+    },
+    {
+     "id": "the-stewards-chain",
+     "approach": "parley",
+     "who": [
+      "Wight"
+     ],
+     "when": "A character addresses the wight as the steward it was, by its chain of office, before the applause stops.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 15,
+      "group": false
+     },
+     "success": "The wight answers as a steward: the performance was ordered 'until the true successor sees it', and it will hold the house until the end. It lets the party watch from the tiers.",
+     "failure": "It takes the party for hecklers and has them removed.",
+     "lines": [
+      "Wight: 'I was told to keep the story. I was never told it was finished.'"
+     ],
+     "reveals": "The play was commanded, and someone chose its scenes.",
+     "canon": "Sets up the moral question: who keeps a useful story, and why."
+    }
+   ]
+  }
+ ]
+}

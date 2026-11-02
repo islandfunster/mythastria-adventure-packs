@@ -1,0 +1,201 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "EM-LD-02",
+   "name": "Vent-born",
+   "level": 2,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Function: Accept expedition leadership; establish Veynar and Kaelra as useful allies with concealed purposes.",
+     "Core problem: Ancient foundries and unstable vents obstruct the road mechanism."
+    ],
+    "open": [
+     "Veynar hands the party command of the landing; his soldiers stay behind them.",
+     "Kaelra reads the road-gate's lintel truthfully, and leaves out the line naming the forge-workers 'tools of the road' (EM-LD-05)."
+    ],
+    "clue_rooms": [
+     "EM-LD-05"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Gargoyle",
+     "count": 1,
+     "int": 6,
+     "languages": [
+      "Primordial (Terran)"
+     ],
+     "cr": "2",
+     "roles": [
+      "skirmisher"
+     ],
+     "does": "Crouches on a plinth among the fallen forge-statues with its back to the sea; unfolds when a character climbs onto the terraces.",
+     "start": [
+      [
+       14.0,
+       11.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       12,
+       9
+      ]
+     ]
+    },
+    {
+     "srd": "Steam Mephit",
+     "count": 3,
+     "int": 11,
+     "languages": [
+      "Primordial (Aquan, Ignan)"
+     ],
+     "cr": "1/4",
+     "roles": [
+      "melee"
+     ],
+     "does": "Boils out of the three vent cones when the gargoyle wakes; scalds with Steam Breath and bursts into steam when destroyed.",
+     "start": [
+      [
+       10.0,
+       14.0
+      ],
+      [
+       17.0,
+       14.0
+      ],
+      [
+       14.0,
+       16.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       8,
+       12
+      ],
+      [
+       15,
+       12
+      ],
+      [
+       12,
+       14
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 600,
+    "band": "Moderate",
+    "budget": {
+     "Low": 400,
+     "Moderate": 600,
+     "High": 800
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "moderate",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 1.0,
+     "deaths": 0,
+     "rounds_to_win": 5.0,
+     "party": "a test party (level 2, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Bright (daylight)",
+    "water": "the cooling aqueduct's channel (shallow)",
+    "flight": "open sky; steam over the vents",
+    "rewards": [
+     "fliers",
+     "creatures that burst on death"
+    ],
+    "gaps": "the terrace steps are 10 ft; the gate stair 5 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "the terraces in daylight with the steaming vents",
+     "creatures born of the island's heat and stone",
+     "Veynar's people following the party's lead from behind",
+     "the measured difficulty (plays as moderate, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "fire",
+      "elemental"
+     ],
+     "habitats": [
+      "Mountain"
+     ],
+     "roles": [
+      "melee",
+      "skirmisher"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Large",
+     "movement": "fliers fit best (the terraces and vents)"
+    },
+    "freshness": "a remix for returning players avoids Gargoyles and Steam Mephits"
+   },
+   "not_simulated": [
+    "Steam Mephit: Blurred Form",
+    "Steam Mephit: Death Burst",
+    "Gargoyle: False Appearance (looks like a statue until it moves)"
+   ],
+   "routes": [
+    {
+     "id": "talk-to-the-steam",
+     "approach": "parley",
+     "who": [
+      "Steam Mephit"
+     ],
+     "when": "A character who speaks Primordial (Aquan or Ignan) calls to the mephits as they rise.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 13,
+      "group": false
+     },
+     "success": "The mephits are bored more than hostile: told the party has come to cool the old foundries, they hiss with laughter and sink back into the vents. The gargoyle, alone, waits on its plinth and only attacks whoever climbs to it.",
+     "failure": "The mephits take offence at being spoken to like servants; they burst out and the gargoyle wakes.",
+     "lines": [
+      "Steam Mephit: 'The forge-folk used to talk to us like that. Then they stopped talking.'"
+     ],
+     "reveals": "The mephits remember the forge-workers who tended these vents, and that the workers did not choose to stay.",
+     "canon": "Foreshadows the chapter's revelation: the empire forged people into instruments."
+    },
+    {
+     "id": "veynars-soldiers",
+     "approach": "distract",
+     "who": [
+      "Gargoyle",
+      "Steam Mephit"
+     ],
+     "when": "The party asks Veynar's soldiers to go first or to draw the creatures off.",
+     "condition": "The party gives the order: Veynar has handed them command.",
+     "success": "Veynar's soldiers draw the vent-born down the beach; the party climbs past to the road gate. Two soldiers are badly burned.",
+     "failure": "Not applicable: the soldiers obey.",
+     "cost": "Veynar notes, without complaint, that the party spends lives when it suits them; Lira, later, asks who was hurt.",
+     "reveals": "Veynar: 'You see? Leadership is only the willingness to choose who goes first.'",
+     "canon": "Accepting expedition leadership has a price; Veynar is useful and his purposes stay concealed."
+    }
+   ]
+  }
+ ]
+}

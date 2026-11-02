@@ -1,0 +1,256 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "SL-TA-02",
+   "name": "The archive's keepers",
+   "level": 5,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Function: Bring the heir/warden distinction almost into focus and expose Kaelra's censorship.",
+     "Core problem: Records are corrupted, deliberately altered, and accessible only during changing tides."
+    ],
+    "open": [
+     "The keepers stop when the party shows a reader's token (none survive) or when they are destroyed.",
+     "The cut ledger page in the preservation vault (SL-TA-04) matches the thread-blade Kaelra carries; confronted, she offers practical help instead of an apology.",
+     "The route to the hidden isle is split across three record sections that flood in turn."
+    ],
+    "clue_rooms": [
+     "SL-TA-03",
+     "SL-TA-04",
+     "SL-TA-05"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Earth Elemental",
+     "count": 1,
+     "int": 5,
+     "languages": [
+      "Primordial (Terran)"
+     ],
+     "cr": "5",
+     "roles": [
+      "soldier"
+     ],
+     "does": "The archive's stone keeper; rises from the reading-hall floor to stop readers leaving with its records.",
+     "start": [
+      [
+       17.5,
+       15.5
+      ]
+     ],
+     "authoring_start": [
+      [
+       15,
+       13
+      ]
+     ]
+    },
+    {
+     "srd": "Gargoyle",
+     "count": 2,
+     "int": 6,
+     "languages": [
+      "Primordial (Terran)"
+     ],
+     "cr": "2",
+     "roles": [
+      "skirmisher"
+     ],
+     "does": "Carved lamp-bearers at the desks' ends that unfold and fly at readers.",
+     "start": [
+      [
+       9.0,
+       13.0
+      ],
+      [
+       20.0,
+       13.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       7,
+       11
+      ],
+      [
+       18,
+       11
+      ]
+     ]
+    },
+    {
+     "srd": "Animated Armor",
+     "count": 1,
+     "int": 1,
+     "languages": [],
+     "cr": "1",
+     "roles": [
+      "soldier"
+     ],
+     "does": "The reading-room guardian, stepping out from the shelves.",
+     "start": [
+      [
+       18.0,
+       14.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       16,
+       12
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 2900,
+    "band": "Low",
+    "budget": {
+     "Low": 2000,
+     "Moderate": 3000,
+     "High": 4400
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "above high",
+     "runs": 10,
+     "wins": 0,
+     "losses": 0,
+     "out_of_rounds": 10,
+     "drops_per_run": 0.0,
+     "deaths": 0,
+     "rounds_to_win": null,
+     "party": "a test party (level 5, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "one more Gargoyle (at 8,11) (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dark; moonlight in the route vault",
+    "water": "sections that flood in turn with the tide",
+    "flight": "a high reading hall",
+    "rewards": [
+     "guardians that stop readers leaving",
+     "a burrowing stone keeper"
+    ],
+    "gaps": "the moon lock and the section doors are 10 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "keepers that stop readers taking records",
+     "the tide's clock: the sections flood in turn",
+     "the cut ledger page and Kaelra's thread-blade",
+     "the measured difficulty (re-prove: as built it plays above high; moderate with the tuning's hit points, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "construct",
+      "elemental"
+     ],
+     "habitats": [
+      "Underdark",
+      "Urban"
+     ],
+     "roles": [
+      "skirmisher",
+      "soldier"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Large",
+     "movement": "walkers, fliers and burrowers"
+    },
+    "freshness": "a remix for returning players avoids Gargoyles and Animated Armor (both met before)"
+   },
+   "not_simulated": [
+    "Earth Elemental: Earth Glide",
+    "Gargoyle: False Appearance",
+    "the sections flooding in turn (the GM's, as an event)"
+   ],
+   "routes": [
+    {
+     "id": "a-readers-token",
+     "approach": "lore",
+     "who": [
+      "Earth Elemental",
+      "Gargoyle",
+      "Animated Armor"
+     ],
+     "when": "A character makes a reader's token from the archive's own seal (the tide-mark carved on the column) before the keepers rise.",
+     "check": {
+      "ability": "Intelligence",
+      "skill": "Arcana",
+      "dc": 15,
+      "group": false
+     },
+     "success": "The keepers take the party for readers: they will not attack anyone reading, only anyone leaving with a record. The party may read everything and must copy, not carry.",
+     "failure": "The token is wrong; the keepers rise as written.",
+     "cost": "Records cannot leave the archive: the party carries the route in copies and memory, and Kaelra's copy is the one the others will trust least.",
+     "reveals": "The archive protected the truth from being carried away and changed.",
+     "canon": "The core problem: records are only safe where no one can edit them."
+    },
+    {
+     "id": "read-in-shifts",
+     "approach": "avoid",
+     "who": [
+      "Earth Elemental",
+      "Gargoyle",
+      "Animated Armor"
+     ],
+     "when": "The party splits: some draw the keepers to the reading hall's far end while others read the sections as they drain.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Perception",
+      "dc": 14,
+      "group": true
+     },
+     "success": "The readers recover the scriptorium's roll, the vault's ledger and the route chart within one tide while the keepers chase the others in circles.",
+     "failure": "A section floods before it is read: the party must wait a full tide (12 hours) for it.",
+     "bypasses": [
+      "SL-TA-02"
+     ],
+     "clue_elsewhere": "Nothing in the reading hall delivers a locked clue; the three sections still do.",
+     "reveals": "In the vault, the cut page: the same fine cut as Kaelra's thread.",
+     "canon": "Exposes Kaelra's censorship in the same scene as the law's two bearers."
+    }
+   ],
+   "events": [
+    {
+     "id": "the-tide",
+     "kind": "flood",
+     "trigger": "The moon lock turns as the tide falls (SL-TA-01); the archive starts to flood again from round 6 of a fight in the reading hall.",
+     "stages": [
+      {
+       "round": 6,
+       "area": "the submerged scriptorium (SL-TA-03)",
+       "depth": "deep"
+      },
+      {
+       "round": 10,
+       "area": "the reading hall's lower floor",
+       "depth": "shallow"
+      }
+     ],
+     "counter": {
+      "how": "Read fast and leave: the route vault stays dry longest. Holding the moon lock open is a DC 15 Strength (Athletics) check each round.",
+      "check": {
+       "ability": "Strength",
+       "skill": "Athletics",
+       "dc": 15
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

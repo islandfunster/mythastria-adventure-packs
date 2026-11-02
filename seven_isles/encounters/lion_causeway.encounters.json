@@ -1,0 +1,204 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "SC-CL-02",
+   "name": "The occupation line",
+   "level": 7,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Function: Final rejection of manufactured kingship; prevent single-person control of the network.",
+     "Core problem: Veynar uses the dominion-stone and royal machinery to manufacture consent.",
+     "Climax: Rusk breaks the blockade; Kaelra destroys her control network; the champion rejects Veynar's coronation; Aelwyn establishes her boundary."
+    ],
+    "open": [
+     "Rusk's flotilla breaks the blockade behind the party as they land (SC-CL-01).",
+     "Veynar's offer waits in the first throne hall (SC-CL-05): the crown, freely given, if the champion will wear it.",
+     "With Drelith's lieutenant (a Guard Captain) the line plays hard: add him for a stronger table."
+    ],
+    "clue_rooms": [
+     "SC-CL-05"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Knight",
+     "count": 3,
+     "int": 11,
+     "languages": [
+      "Common plus one other language"
+     ],
+     "cr": "3",
+     "roles": [
+      "soldier"
+     ],
+     "does": "Drelith's soldiers holding the causeway of lions until the coronation is done; the senior knight offers the party safe passage if they come to kneel, and means it.",
+     "start": [
+      [
+       13.0,
+       14.0
+      ],
+      [
+       16.0,
+       14.0
+      ],
+      [
+       14.0,
+       17.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       11,
+       12
+      ],
+      [
+       14,
+       12
+      ],
+      [
+       12,
+       15
+      ]
+     ]
+    },
+    {
+     "srd": "Mage",
+     "count": 1,
+     "int": 17,
+     "languages": [
+      "Common plus three other languages"
+     ],
+     "cr": "6",
+     "roles": [
+      "lurker"
+     ],
+     "does": "Veynar's court mage behind the line, the air around it humming with the dominion-stone's borrowed authority.",
+     "start": [
+      [
+       15.0,
+       10.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       13,
+       8
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 4400,
+    "band": "Low",
+    "budget": {
+     "Low": 3000,
+     "Moderate": 5200,
+     "High": 6800
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "high",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 1.8,
+     "deaths": 0,
+     "rounds_to_win": 4.2,
+     "party": "a test party (level 7, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "one fewer Guard Captain (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dim (dusk), Bright by the braziers",
+    "water": "the bay behind the landing",
+    "flight": "open sky over the causeway",
+    "rewards": [
+     "a disciplined line with a spellcaster behind it",
+     "a narrow causeway between statues"
+    ],
+    "gaps": "the causeway is 15 ft between the lions; the mausolea doors 5 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "soldiers of the occupation who believe they keep order",
+     "the coronation banners and the dominion-stone's hum",
+     "an offer of passage on the condition of kneeling",
+     "the measured difficulty (plays as high as built, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "humanoid"
+     ],
+     "habitats": [
+      "Urban"
+     ],
+     "roles": [
+      "lurker",
+      "soldier"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Medium",
+     "movement": "walkers"
+    },
+    "freshness": "a remix for returning players avoids Knights and the Mage"
+   },
+   "not_simulated": [
+    "Knight: Parry reaction is played; Leadership is the GM's",
+    "the dominion-stone's authority effects (the finale's, designed separately)"
+   ],
+   "routes": [
+    {
+     "id": "refuse-to-kneel",
+     "approach": "parley",
+     "who": [
+      "Knight"
+     ],
+     "when": "The senior knight makes the offer of safe passage on condition of kneeling.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 16,
+      "group": false
+     },
+     "success": "The champion refuses to kneel and asks the knights whom they would kneel to, if the crown were given and not taken. The senior knight hesitates, then orders the line to open: 'We hold for a king. We do not hold against one who will not be one.' The mage alone stays to fight, and flees after two rounds.",
+     "failure": "The knights hear defiance, not argument; the line holds and the fight starts.",
+     "lines": [
+      "Senior knight: 'Kneel, and the causeway is yours. It costs you nothing.'",
+      "Answer (the champion's own words are better): 'It costs everyone else their choice.'"
+     ],
+     "reveals": "The knights were promised a lawful king, not a manufactured one; some of them know the difference.",
+     "canon": "The final rejection of manufactured kingship, rehearsed before the throne hall."
+    },
+    {
+     "id": "rusks-boats",
+     "approach": "help",
+     "who": [
+      "Knight",
+      "Mage"
+     ],
+     "when": "Rusk's flotilla has broken the blockade and the party signals from the landing.",
+     "condition": "A signal Rusk agreed to (a fare paid long ago, or a debt he owes).",
+     "success": "Fishing boats run in under the causeway's flank; smugglers and debtors swarm the mausolea. The knights must turn half their line; the party faces two knights and the mage.",
+     "failure": "Not applicable: Rusk comes or he does not.",
+     "lines": [
+      "Rusk: 'Veynar put a chain across my water. I have come to remove it.'"
+     ],
+     "reveals": "The sea roads' people choose sides without a crown telling them to.",
+     "canon": "Rusk breaks the blockade."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "EC-MP-02",
+   "name": "The remembered steward",
+   "level": 3,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Revelation: The champion resembles figures and choices within royal memory, but the memories address him as 'you who came,' never 'you who returned.'",
+     "Route-key: Assemble a truthful sequence of resonant memories rather than the most flattering sequence."
+    ],
+    "open": [
+     "The voices in the hall speak of a figure who made the same choices the champion has made; the resemblance is real, the conclusion is the party's.",
+     "Kaelra names the alcoves' scenes in the most flattering order (EC-MP-03); the stair's notes give the true one (EC-MP-04)."
+    ],
+    "clue_rooms": [
+     "EC-MP-04"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Doppelganger",
+     "count": 1,
+     "int": 11,
+     "languages": [
+      "Common plus three other languages"
+     ],
+     "cr": "3",
+     "roles": [
+      "melee"
+     ],
+     "does": "The 'remembered steward': wears faces from the hall's memories, reads thoughts, then wears the face of someone the party trusts.",
+     "start": [
+      [
+       14.0,
+       13.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       12,
+       10
+      ]
+     ]
+    },
+    {
+     "srd": "Shadow",
+     "count": 2,
+     "int": 6,
+     "languages": [],
+     "cr": "1/2",
+     "roles": [
+      "skirmisher",
+      "lurker",
+      "brute"
+     ],
+     "does": "Remembered shapes that peel from the steward statues and drain strength.",
+     "start": [
+      [
+       9.0,
+       14.0
+      ],
+      [
+       19.0,
+       15.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       7,
+       11
+      ],
+      [
+       17,
+       12
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 900,
+    "band": "Moderate",
+    "budget": {
+     "Low": 600,
+     "Moderate": 900,
+     "High": 1600
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "moderate",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 0.7,
+     "deaths": 0,
+     "rounds_to_win": 3.8,
+     "party": "a test party (level 3, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dark; pale crystal glow",
+    "water": "the drowned bell court (shallow seawater)",
+    "flight": "a crystal hall",
+    "rewards": [
+     "a shapeshifter who reads minds",
+     "shadows that hide in dim light"
+    ],
+    "gaps": "the alcoves are 5 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "a steward who wears remembered and trusted faces",
+     "the voices addressing the champion as 'you who came', never 'you who returned'",
+     "the measured difficulty (plays as moderate, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "shapechanger",
+      "undead"
+     ],
+     "habitats": [
+      "Urban"
+     ],
+     "roles": [
+      "brute",
+      "lurker",
+      "melee",
+      "skirmisher"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Medium",
+     "movement": "walkers"
+    },
+    "freshness": "a remix for returning players avoids the Doppelganger and Shadows"
+   },
+   "not_simulated": [
+    "Doppelganger: Read Thoughts and Shape-Shift (the GM's)",
+    "Shadow: Strength Drain is played; hiding in dim light is the GM's"
+   ],
+   "routes": [
+    {
+     "id": "name-the-false-face",
+     "approach": "deceive",
+     "who": [
+      "Doppelganger"
+     ],
+     "when": "The steward wears a trusted face and speaks; a character plays along to draw out what it wants.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Deception",
+      "dc": 14,
+      "group": false
+     },
+     "success": "The doppelganger, pleased with its mask, tells the party what the hall wants: a sequence. It offers the flattering one, and lets them pass to the alcoves to 'find their story'. The shadows stay on the statues.",
+     "failure": "It reads the lie in their thoughts, drops the face and strikes; the shadows peel free.",
+     "lines": [
+      "The remembered steward, in a trusted voice: 'You who came. Of course it was you. Put your choices first, and the road will open.'"
+     ],
+     "reveals": "The steward always says 'you who came'; it has never said 'returned'.",
+     "canon": "Delivers the revelation and tempts the party toward the flattering sequence."
+    },
+    {
+     "id": "the-true-face",
+     "approach": "lore",
+     "who": [
+      "Doppelganger",
+      "Shadow"
+     ],
+     "when": "A character recognises that the trusted face knows something its owner cannot know.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Insight",
+      "dc": 14,
+      "group": false
+     },
+     "success": "Named for what it is, the steward laughs and becomes a statue's face again; the shadows fold back. It will not fight those it cannot fool.",
+     "failure": "The face is believed; the steward strikes when backs are turned.",
+     "reveals": "The steward is made of the hall's memories: it can only show what was, never what it means.",
+     "canon": "Fair play: the memories are true; the conclusion is the party's."
+    }
+   ]
+  }
+ ]
+}

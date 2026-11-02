@@ -1,0 +1,165 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "EC-CM-04",
+   "name": "The remembered guardians",
+   "level": 3,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Regional identity: resonant valleys, crystal caverns.",
+     "Core problem: Memories manifest as voices and scenes; truth and false inference become difficult to separate."
+    ],
+    "open": [
+     "Each crystal column in the first gallery replays the last scene before it (EC-CM-02); Kaelra points to a crowd turning to look at someone, and Selric points out that no one in the scene is the champion, only someone standing where he stands now.",
+     "The singing passage (EC-CM-03) is a quiet way into the hall."
+    ],
+    "clue_rooms": [
+     "EC-CM-02"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Minotaur Skeleton",
+     "count": 2,
+     "int": 6,
+     "languages": [
+      "Understands Abyssal but can't speak"
+     ],
+     "cr": "2",
+     "roles": [
+      "skirmisher",
+      "brute"
+     ],
+     "does": "The bones of the old empire's maze-beasts, sealed in violet crystal; wake when the geode hall hears footsteps it does not remember, and charge with their horns.",
+     "start": [
+      [
+       11.5,
+       8.5
+      ],
+      [
+       15.5,
+       8.5
+      ]
+     ],
+     "authoring_start": [
+      [
+       9,
+       6
+      ],
+      [
+       13,
+       6
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 900,
+    "band": "Moderate",
+    "budget": {
+     "Low": 600,
+     "Moderate": 900,
+     "High": 1600
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "low",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 0.3,
+     "deaths": 0,
+     "rounds_to_win": 4.1,
+     "party": "a test party (level 3, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "Minotaur Skeleton at high hit points (72, hit dice (6d10 + 12)) (plays as moderate); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Dark, Dim near the crystals",
+    "water": "none",
+    "flight": "a high geode hall",
+    "rewards": [
+     "chargers that need a straight run",
+     "columns and spires that break the run"
+    ],
+    "gaps": "the singing passage is 5 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "guardians woken by unremembered footsteps",
+     "the crystals that replay true scenes out of context",
+     "the measured difficulty (plays as low as built; the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "undead"
+     ],
+     "habitats": [
+      "Underdark"
+     ],
+     "roles": [
+      "brute",
+      "skirmisher"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Large",
+     "movement": "walkers (Large chargers fit the hall)"
+    },
+    "freshness": "a remix for returning players avoids Minotaur Skeletons"
+   },
+   "not_simulated": [
+    "Minotaur Skeleton: Gore charge (20 ft straight before the hit) is played; its push is the GM's"
+   ],
+   "routes": [
+    {
+     "id": "remembered-steps",
+     "approach": "lore",
+     "who": [
+      "Minotaur Skeleton"
+     ],
+     "when": "A character who listened to the singing passage repeats its rhythm with their footsteps on entering the hall.",
+     "check": {
+      "ability": "Wisdom",
+      "skill": "Perception",
+      "dc": 13,
+      "group": false
+     },
+     "success": "The hall 'remembers' the steps: the crystal rings, steadies, and the guardians stay sealed. The party crosses to the resonant exit.",
+     "failure": "A step falls out of time; the crystal cracks and the guardians wake.",
+     "reveals": "The hall keeps only what it has heard before; it treats a repeated pattern as truth.",
+     "canon": "The core problem in small: repetition mistaken for truth."
+    },
+    {
+     "id": "the-singing-passage",
+     "approach": "sneak past",
+     "who": [
+      "Minotaur Skeleton"
+     ],
+     "when": "The party takes the singing passage (EC-CM-03).",
+     "check": {
+      "ability": "Dexterity",
+      "skill": "Stealth",
+      "dc": 13,
+      "group": true
+     },
+     "success": "The party reaches the hall's far side unheard and climbs to the exit.",
+     "failure": "The crystal sings at a breath; the guardians wake facing the passage's mouth.",
+     "reveals": "Nothing new on the way.",
+     "canon": "The first gallery's scenes (the clue) were already passed."
+    }
+   ]
+  }
+ ]
+}

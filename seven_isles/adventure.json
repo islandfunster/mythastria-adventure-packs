@@ -1,0 +1,421 @@
+{
+ "format": "mythastria-adventure/1",
+ "id": "seven_isles",
+ "name": "Seven Isles (Free Adventure)",
+ "version": "2026-11-02",
+ "lore": "lore.json",
+ "encounters": {
+  "storm_citadel": {
+   "scenario": "scenarios/storm_citadel.json",
+   "legacy_scenario": "storm_citadel.json",
+   "description": "encounters/storm_citadel.encounters.json"
+  },
+  "ember_landing": {
+   "scenario": "scenarios/ember_landing.json",
+   "legacy_scenario": "ember_landing.json",
+   "description": "encounters/ember_landing.encounters.json"
+  },
+  "lava_tubes": {
+   "scenario": "scenarios/lava_tubes.json",
+   "legacy_scenario": "lava_tubes.json",
+   "description": "encounters/lava_tubes.encounters.json"
+  },
+  "road_forge": {
+   "scenario": "scenarios/road_forge.json",
+   "legacy_scenario": "road_forge.json",
+   "description": "encounters/road_forge.encounters.json"
+  },
+  "smith_temple": {
+   "scenario": "scenarios/smith_temple.json",
+   "legacy_scenario": "smith_temple.json",
+   "description": "encounters/smith_temple.encounters.json"
+  },
+  "amphitheater": {
+   "scenario": "scenarios/amphitheater.json",
+   "legacy_scenario": "amphitheater.json",
+   "description": "encounters/amphitheater.encounters.json"
+  },
+  "bell_cove": {
+   "scenario": "scenarios/bell_cove.json",
+   "legacy_scenario": "bell_cove.json",
+   "description": "encounters/bell_cove.encounters.json"
+  },
+  "crystal_maze": {
+   "scenario": "scenarios/crystal_maze.json",
+   "legacy_scenario": "crystal_maze.json",
+   "description": "encounters/crystal_maze.encounters.json"
+  },
+  "memory_palace": {
+   "scenario": "scenarios/memory_palace.json",
+   "legacy_scenario": "memory_palace.json",
+   "description": "encounters/memory_palace.encounters.json"
+  },
+  "preservation_vault": {
+   "scenario": "scenarios/preservation_vault.json",
+   "legacy_scenario": "preservation_vault.json",
+   "description": "encounters/preservation_vault.encounters.json"
+  },
+  "lion_causeway": {
+   "scenario": "scenarios/lion_causeway.json",
+   "legacy_scenario": "lion_causeway.json",
+   "description": "encounters/lion_causeway.encounters.json"
+  },
+  "tidal_archive": {
+   "scenario": "scenarios/tidal_archive.json",
+   "legacy_scenario": "tidal_archive.json",
+   "description": "encounters/tidal_archive.encounters.json"
+  },
+  "village_harbor": {
+   "scenario": "scenarios/village_harbor.json",
+   "legacy_scenario": "village_harbor.json",
+   "description": "encounters/village_harbor.encounters.json"
+  },
+  "ward_chamber": {
+   "scenario": "scenarios/ward_chamber.json",
+   "legacy_scenario": "ward_chamber.json",
+   "description": "encounters/ward_chamber.encounters.json"
+  },
+  "watch_temple_exterior": {
+   "scenario": "scenarios/watch_temple_exterior.json",
+   "legacy_scenario": "watch_temple_exterior.json",
+   "description": "encounters/watch_temple_exterior.encounters.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_interior": {
+   "scenario": "scenarios/watch_temple_interior.json",
+   "legacy_scenario": "watch_temple_interior.json",
+   "description": "encounters/watch_temple_interior.encounters.json",
+   "place": "Watch Temple"
+  },
+  "shattered_crowns_finale": {
+   "scenario": "scenarios/shattered_crowns_finale.json",
+   "legacy_scenario": "shattered_crowns_finale.json",
+   "description": "encounters/shattered_crowns_finale.encounters.json"
+  },
+  "amphitheater_L4": {
+   "scenario": "scenarios/levels/L4/amphitheater.json",
+   "variant_of": "amphitheater",
+   "level": 4,
+   "legacy_scenario": "test/amphitheater_L4.json"
+  },
+  "amphitheater_L6": {
+   "scenario": "scenarios/levels/L6/amphitheater.json",
+   "variant_of": "amphitheater",
+   "level": 6,
+   "legacy_scenario": "test/amphitheater_L6.json"
+  },
+  "amphitheater_L8": {
+   "scenario": "scenarios/levels/L8/amphitheater.json",
+   "variant_of": "amphitheater",
+   "level": 8,
+   "legacy_scenario": "test/amphitheater_L8.json"
+  },
+  "bell_cove_L4": {
+   "scenario": "scenarios/levels/L4/bell_cove.json",
+   "variant_of": "bell_cove",
+   "level": 4,
+   "legacy_scenario": "test/bell_cove_L4.json"
+  },
+  "bell_cove_L6": {
+   "scenario": "scenarios/levels/L6/bell_cove.json",
+   "variant_of": "bell_cove",
+   "level": 6,
+   "legacy_scenario": "test/bell_cove_L6.json"
+  },
+  "bell_cove_L8": {
+   "scenario": "scenarios/levels/L8/bell_cove.json",
+   "variant_of": "bell_cove",
+   "level": 8,
+   "legacy_scenario": "test/bell_cove_L8.json"
+  },
+  "crystal_maze_L4": {
+   "scenario": "scenarios/levels/L4/crystal_maze.json",
+   "variant_of": "crystal_maze",
+   "level": 4,
+   "legacy_scenario": "test/crystal_maze_L4.json"
+  },
+  "crystal_maze_L6": {
+   "scenario": "scenarios/levels/L6/crystal_maze.json",
+   "variant_of": "crystal_maze",
+   "level": 6,
+   "legacy_scenario": "test/crystal_maze_L6.json"
+  },
+  "crystal_maze_L8": {
+   "scenario": "scenarios/levels/L8/crystal_maze.json",
+   "variant_of": "crystal_maze",
+   "level": 8,
+   "legacy_scenario": "test/crystal_maze_L8.json"
+  },
+  "ember_landing_L2": {
+   "scenario": "scenarios/levels/L2/ember_landing.json",
+   "variant_of": "ember_landing",
+   "level": 2,
+   "legacy_scenario": "test/ember_landing_L2.json"
+  },
+  "ember_landing_L4": {
+   "scenario": "scenarios/levels/L4/ember_landing.json",
+   "variant_of": "ember_landing",
+   "level": 4,
+   "legacy_scenario": "test/ember_landing_L4.json"
+  },
+  "ember_landing_L6": {
+   "scenario": "scenarios/levels/L6/ember_landing.json",
+   "variant_of": "ember_landing",
+   "level": 6,
+   "legacy_scenario": "test/ember_landing_L6.json"
+  },
+  "ember_landing_L8": {
+   "scenario": "scenarios/levels/L8/ember_landing.json",
+   "variant_of": "ember_landing",
+   "level": 8,
+   "legacy_scenario": "test/ember_landing_L8.json"
+  },
+  "lava_tubes_L2": {
+   "scenario": "scenarios/levels/L2/lava_tubes.json",
+   "variant_of": "lava_tubes",
+   "level": 2,
+   "legacy_scenario": "test/lava_tubes_L2.json"
+  },
+  "lava_tubes_L4": {
+   "scenario": "scenarios/levels/L4/lava_tubes.json",
+   "variant_of": "lava_tubes",
+   "level": 4,
+   "legacy_scenario": "test/lava_tubes_L4.json"
+  },
+  "lava_tubes_L6": {
+   "scenario": "scenarios/levels/L6/lava_tubes.json",
+   "variant_of": "lava_tubes",
+   "level": 6,
+   "legacy_scenario": "test/lava_tubes_L6.json"
+  },
+  "lava_tubes_L8": {
+   "scenario": "scenarios/levels/L8/lava_tubes.json",
+   "variant_of": "lava_tubes",
+   "level": 8,
+   "legacy_scenario": "test/lava_tubes_L8.json"
+  },
+  "lion_causeway_L8": {
+   "scenario": "scenarios/levels/L8/lion_causeway.json",
+   "variant_of": "lion_causeway",
+   "level": 8,
+   "legacy_scenario": "test/lion_causeway_L8.json"
+  },
+  "memory_palace_L4": {
+   "scenario": "scenarios/levels/L4/memory_palace.json",
+   "variant_of": "memory_palace",
+   "level": 4,
+   "legacy_scenario": "test/memory_palace_L4.json"
+  },
+  "memory_palace_L6": {
+   "scenario": "scenarios/levels/L6/memory_palace.json",
+   "variant_of": "memory_palace",
+   "level": 6,
+   "legacy_scenario": "test/memory_palace_L6.json"
+  },
+  "memory_palace_L8": {
+   "scenario": "scenarios/levels/L8/memory_palace.json",
+   "variant_of": "memory_palace",
+   "level": 8,
+   "legacy_scenario": "test/memory_palace_L8.json"
+  },
+  "preservation_vault_L6": {
+   "scenario": "scenarios/levels/L6/preservation_vault.json",
+   "variant_of": "preservation_vault",
+   "level": 6,
+   "legacy_scenario": "test/preservation_vault_L6.json"
+  },
+  "preservation_vault_L8": {
+   "scenario": "scenarios/levels/L8/preservation_vault.json",
+   "variant_of": "preservation_vault",
+   "level": 8,
+   "legacy_scenario": "test/preservation_vault_L8.json"
+  },
+  "road_forge_L2": {
+   "scenario": "scenarios/levels/L2/road_forge.json",
+   "variant_of": "road_forge",
+   "level": 2,
+   "legacy_scenario": "test/road_forge_L2.json"
+  },
+  "road_forge_L4": {
+   "scenario": "scenarios/levels/L4/road_forge.json",
+   "variant_of": "road_forge",
+   "level": 4,
+   "legacy_scenario": "test/road_forge_L4.json"
+  },
+  "road_forge_L6": {
+   "scenario": "scenarios/levels/L6/road_forge.json",
+   "variant_of": "road_forge",
+   "level": 6,
+   "legacy_scenario": "test/road_forge_L6.json"
+  },
+  "road_forge_L8": {
+   "scenario": "scenarios/levels/L8/road_forge.json",
+   "variant_of": "road_forge",
+   "level": 8,
+   "legacy_scenario": "test/road_forge_L8.json"
+  },
+  "smith_temple_L2": {
+   "scenario": "scenarios/levels/L2/smith_temple.json",
+   "variant_of": "smith_temple",
+   "level": 2,
+   "legacy_scenario": "test/smith_temple_L2.json"
+  },
+  "smith_temple_L4": {
+   "scenario": "scenarios/levels/L4/smith_temple.json",
+   "variant_of": "smith_temple",
+   "level": 4,
+   "legacy_scenario": "test/smith_temple_L4.json"
+  },
+  "smith_temple_L6": {
+   "scenario": "scenarios/levels/L6/smith_temple.json",
+   "variant_of": "smith_temple",
+   "level": 6,
+   "legacy_scenario": "test/smith_temple_L6.json"
+  },
+  "smith_temple_L8": {
+   "scenario": "scenarios/levels/L8/smith_temple.json",
+   "variant_of": "smith_temple",
+   "level": 8,
+   "legacy_scenario": "test/smith_temple_L8.json"
+  },
+  "storm_citadel_L4": {
+   "scenario": "scenarios/levels/L4/storm_citadel.json",
+   "variant_of": "storm_citadel",
+   "level": 4,
+   "legacy_scenario": "test/storm_citadel_L4.json"
+  },
+  "storm_citadel_L6": {
+   "scenario": "scenarios/levels/L6/storm_citadel.json",
+   "variant_of": "storm_citadel",
+   "level": 6,
+   "legacy_scenario": "test/storm_citadel_L6.json"
+  },
+  "storm_citadel_L8": {
+   "scenario": "scenarios/levels/L8/storm_citadel.json",
+   "variant_of": "storm_citadel",
+   "level": 8,
+   "legacy_scenario": "test/storm_citadel_L8.json"
+  },
+  "tidal_archive_L6": {
+   "scenario": "scenarios/levels/L6/tidal_archive.json",
+   "variant_of": "tidal_archive",
+   "level": 6,
+   "legacy_scenario": "test/tidal_archive_L6.json"
+  },
+  "tidal_archive_L8": {
+   "scenario": "scenarios/levels/L8/tidal_archive.json",
+   "variant_of": "tidal_archive",
+   "level": 8,
+   "legacy_scenario": "test/tidal_archive_L8.json"
+  },
+  "village_harbor_L2": {
+   "scenario": "scenarios/levels/L2/village_harbor.json",
+   "variant_of": "village_harbor",
+   "level": 2,
+   "legacy_scenario": "test/village_harbor_L2.json"
+  },
+  "village_harbor_L4": {
+   "scenario": "scenarios/levels/L4/village_harbor.json",
+   "variant_of": "village_harbor",
+   "level": 4,
+   "legacy_scenario": "test/village_harbor_L4.json"
+  },
+  "village_harbor_L6": {
+   "scenario": "scenarios/levels/L6/village_harbor.json",
+   "variant_of": "village_harbor",
+   "level": 6,
+   "legacy_scenario": "test/village_harbor_L6.json"
+  },
+  "village_harbor_L8": {
+   "scenario": "scenarios/levels/L8/village_harbor.json",
+   "variant_of": "village_harbor",
+   "level": 8,
+   "legacy_scenario": "test/village_harbor_L8.json"
+  },
+  "ward_chamber_L2": {
+   "scenario": "scenarios/levels/L2/ward_chamber.json",
+   "variant_of": "ward_chamber",
+   "level": 2,
+   "legacy_scenario": "test/ward_chamber_L2.json"
+  },
+  "ward_chamber_L4": {
+   "scenario": "scenarios/levels/L4/ward_chamber.json",
+   "variant_of": "ward_chamber",
+   "level": 4,
+   "legacy_scenario": "test/ward_chamber_L4.json"
+  },
+  "ward_chamber_L6": {
+   "scenario": "scenarios/levels/L6/ward_chamber.json",
+   "variant_of": "ward_chamber",
+   "level": 6,
+   "legacy_scenario": "test/ward_chamber_L6.json"
+  },
+  "ward_chamber_L8": {
+   "scenario": "scenarios/levels/L8/ward_chamber.json",
+   "variant_of": "ward_chamber",
+   "level": 8,
+   "legacy_scenario": "test/ward_chamber_L8.json"
+  },
+  "watch_temple_exterior_L2": {
+   "scenario": "scenarios/levels/L2/watch_temple_exterior.json",
+   "variant_of": "watch_temple_exterior",
+   "level": 2,
+   "legacy_scenario": "test/watch_temple_exterior_L2.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_exterior_L4": {
+   "scenario": "scenarios/levels/L4/watch_temple_exterior.json",
+   "variant_of": "watch_temple_exterior",
+   "level": 4,
+   "legacy_scenario": "test/watch_temple_exterior_L4.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_exterior_L6": {
+   "scenario": "scenarios/levels/L6/watch_temple_exterior.json",
+   "variant_of": "watch_temple_exterior",
+   "level": 6,
+   "legacy_scenario": "test/watch_temple_exterior_L6.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_exterior_L8": {
+   "scenario": "scenarios/levels/L8/watch_temple_exterior.json",
+   "variant_of": "watch_temple_exterior",
+   "level": 8,
+   "legacy_scenario": "test/watch_temple_exterior_L8.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_interior_L2": {
+   "scenario": "scenarios/levels/L2/watch_temple_interior.json",
+   "variant_of": "watch_temple_interior",
+   "level": 2,
+   "legacy_scenario": "test/watch_temple_interior_L2.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_interior_L4": {
+   "scenario": "scenarios/levels/L4/watch_temple_interior.json",
+   "variant_of": "watch_temple_interior",
+   "level": 4,
+   "legacy_scenario": "test/watch_temple_interior_L4.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_interior_L6": {
+   "scenario": "scenarios/levels/L6/watch_temple_interior.json",
+   "variant_of": "watch_temple_interior",
+   "level": 6,
+   "legacy_scenario": "test/watch_temple_interior_L6.json",
+   "place": "Watch Temple"
+  },
+  "watch_temple_interior_L8": {
+   "scenario": "scenarios/levels/L8/watch_temple_interior.json",
+   "variant_of": "watch_temple_interior",
+   "level": 8,
+   "legacy_scenario": "test/watch_temple_interior_L8.json",
+   "place": "Watch Temple"
+  },
+  "on_the_stage": {
+   "scenario": "scenarios/on_the_stage.json"
+  }
+ },
+ "levels_note": "scenarios/levels/L<n>/<map>.json are each map tuned for a party of level n; an entry with variant_of is that map's level version, not a place of its own.",
+ "price": "free"
+}

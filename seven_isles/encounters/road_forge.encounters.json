@@ -1,0 +1,197 @@
+{
+ "format": "remix-encounters/1",
+ "note": "What the creatures do, the routes through this place, and what a Remix may change.",
+ "encounters": [
+  {
+   "room": "EM-RF-02",
+   "name": "The forge's warden",
+   "level": 2,
+   "party_size": 4,
+   "story_job": {
+    "locked": [
+     "Revelation: Tovan's forge-stone is an Ember meteor fragment. The empire forged people into instruments as readily as weapons.",
+     "Route-key: Reignite and correctly temper the road mechanism without surrendering it entirely to Veynar.",
+     "Moral question: What should be preserved when the forge can strengthen weapons but also revive an exploitative imperial system?"
+    ],
+    "open": [
+     "Veynar waits at the causeway with his escort and asks the party to go first.",
+     "The mechanism's socket matches the forge-stone Tovan gave the champion in the harbor (VI-HB); whoever tempers the wheel decides whose hands it answers (EM-RF-05)."
+    ],
+    "clue_rooms": [
+     "EM-RF-05"
+    ]
+   },
+   "original": [
+    {
+     "srd": "Azer Sentinel",
+     "count": 1,
+     "int": 12,
+     "languages": [
+      "Primordial (Ignan)"
+     ],
+     "cr": "2",
+     "roles": [
+      "soldier"
+     ],
+     "does": "Bound to the forge long ago, it works the hearth and does not look up; turns from the anvil when anyone steps toward the road mechanism, and does not pursue past the causeway.",
+     "start": [
+      [
+       14.0,
+       10.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       12,
+       8
+      ]
+     ]
+    },
+    {
+     "srd": "Animated Flying Sword",
+     "count": 2,
+     "int": 1,
+     "languages": [],
+     "cr": "1/4",
+     "roles": [
+      "skirmisher",
+      "soldier"
+     ],
+     "does": "Unfinished blades on the racks that lift and fly at whoever the azer turns on.",
+     "start": [
+      [
+       11.0,
+       11.0
+      ],
+      [
+       16.0,
+       11.0
+      ]
+     ],
+     "authoring_start": [
+      [
+       9,
+       9
+      ],
+      [
+       14,
+       9
+      ]
+     ]
+    }
+   ],
+   "difficulty": {
+    "xp": 550,
+    "band": "Low",
+    "budget": {
+     "Low": 400,
+     "Moderate": 600,
+     "High": 800
+    },
+    "measured": {
+     "build": "as built",
+     "plays_as": "high",
+     "runs": 10,
+     "wins": 10,
+     "losses": 0,
+     "out_of_rounds": 0,
+     "drops_per_run": 1.5,
+     "deaths": 0,
+     "rounds_to_win": 5.5,
+     "party": "a test party (level 2, team tactics)"
+    },
+    "target": "moderate",
+    "tuner_recommends": "as built (plays as high); not applied unless the map says so"
+   },
+   "terrain": {
+    "light": "Bright near the hearth, dim in the bellows galleries",
+    "water": "the quench pit (EM-RF-04)",
+    "flight": "a high forge hall",
+    "rewards": [
+     "fliers in a hall with cover",
+     "a guardian that burns those who strike it"
+    ],
+    "gaps": "the bronze doors and the causeway are 10 ft"
+   },
+   "remix": {
+    "may_change": [
+     "the creatures and how many",
+     "their start squares",
+     "their tactics",
+     "the read-aloud and GM lines about them",
+     "the routes"
+    ],
+    "must_keep": [
+     "a guardian bound to the forge that keeps the mechanism",
+     "the half-finished blades as part of the threat",
+     "the socket shaped for Tovan's forge-stone",
+     "the measured difficulty (plays as high as built; moderate with each sword at 24 hit points, or the GM's target)"
+    ],
+    "filters": {
+     "themes": [
+      "fire",
+      "construct"
+     ],
+     "habitats": [
+      "Mountain",
+      "Urban"
+     ],
+     "roles": [
+      "skirmisher",
+      "soldier"
+     ],
+     "tone_cap": "dark",
+     "max_size": "Large",
+     "movement": "walkers and fliers"
+    },
+    "freshness": "a remix for returning players avoids the Azer Sentinel and Animated Flying Swords"
+   },
+   "not_simulated": [
+    "Azer Sentinel: Heated Body",
+    "Azer Sentinel: not pursuing past the causeway (the GM's)"
+   ],
+   "routes": [
+    {
+     "id": "work-the-anvil",
+     "approach": "help",
+     "who": [
+      "Azer Sentinel"
+     ],
+     "when": "A character with smith's tools (or Tovan's training) picks up a hammer and works beside the azer before going near the mechanism.",
+     "check": {
+      "ability": "Intelligence",
+      "skill": "smith's tools",
+      "dc": 13,
+      "group": false
+     },
+     "success": "The azer watches the work, then speaks in Ignan: the forge must be fed and the wheel tempered with the quench water, not quenched in blood. It lets the party pass to the mechanism and keeps the swords on their racks.",
+     "failure": "The work is clumsy; the azer takes it as mockery of the craft and the blades lift.",
+     "lines": [
+      "Azer Sentinel, in Ignan: 'Every collar on that wall was made by someone who was told it was an honour.'"
+     ],
+     "reveals": "The racks hold collars as well as blades: the forge made restraints for its workers too.",
+     "canon": "Delivers the revelation in the room: people were forged into instruments."
+    },
+    {
+     "id": "speak-to-the-warden",
+     "approach": "parley",
+     "who": [
+      "Azer Sentinel"
+     ],
+     "when": "A character who speaks Primordial (Ignan) addresses the azer before stepping toward the mechanism.",
+     "check": {
+      "ability": "Charisma",
+      "skill": "Persuasion",
+      "dc": 14,
+      "group": false
+     },
+     "success": "The azer asks one question: 'Whose hands will the road answer?' If the party says their own and not Veynar's, it stands aside.",
+     "failure": "It hears a servant's answer and turns from the anvil with the blades.",
+     "cost": "Veynar hears the party refuse him the mechanism; his courtesy cools by a degree.",
+     "reveals": "The forge was built to answer one master, and the azer has waited for one it could refuse.",
+     "canon": "Puts the route-key's condition (without surrendering it to Veynar) into the warden's mouth."
+    }
+   ]
+  }
+ ]
+}

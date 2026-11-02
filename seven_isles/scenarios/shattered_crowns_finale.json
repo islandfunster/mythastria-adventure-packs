@@ -1,0 +1,605 @@
+{
+ "name": "Shattered Crowns Isle - Dominion vault confrontation (Seven Isles)",
+ "map_name": "Shattered Crowns Isle - Dominion vault confrontation",
+ "source": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+ "rounds": 8,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "perception_dc": 15,
+ "walls": [
+  {
+   "id": "north",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     19.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "east",
+   "points": [
+    [
+     19.5,
+     0.5
+    ],
+    [
+     19.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "south",
+   "points": [
+    [
+     0.5,
+     15.5
+    ],
+    [
+     19.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "west",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     15.5
+    ]
+   ]
+  }
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 17,
+   "x": 5,
+   "y": 13,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 6",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 6,
+   "y": 13,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 3",
+   "side": "friend",
+   "pc": true,
+   "init": 13,
+   "x": 5,
+   "y": 14,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00004",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 11,
+   "x": 6,
+   "y": 14,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "hp": 110,
+   "ac": 18,
+   "dex_save": 2,
+   "wis_save": 1,
+   "speed": "30 ft.",
+   "space": 5,
+   "type": "Humanoid",
+   "int": 12,
+   "senses": "Darkvision 120 ft.; Passive Perception 14",
+   "wis_mod": 1,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "Drelith makes two Longsword attacks."
+    },
+    {
+     "id": "id-00002",
+     "name": "Longsword",
+     "atk": 7,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d8+4",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +7, reach 5 ft. Hit: 13 (2d8 + 4) Slashing damage."
+    }
+   ],
+   "id": "id-00005",
+   "name": "Captain Drelith",
+   "init": 9,
+   "x": 13,
+   "y": 4,
+   "side": "foe"
+  },
+  {
+   "hp": 52,
+   "ac": 18,
+   "dex_save": 0,
+   "wis_save": 2,
+   "speed": "30 ft.",
+   "space": 5,
+   "type": "Humanoid",
+   "int": 11,
+   "senses": "Passive Perception 10",
+   "wis_mod": 0,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The knight makes two attacks, using Greatsword or Heavy Crossbow in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Greatsword",
+     "atk": 5,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d6+3",
+     "dmgtype": "slashing",
+     "dmg2": "1d8",
+     "dmgtype2": "radiant",
+     "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage plus 4 (1d8) Radiant damage."
+    },
+    {
+     "id": "id-00003",
+     "name": "Heavy Crossbow",
+     "atk": 2,
+     "atktype": "ranged",
+     "reach": 100,
+     "dmg": "2d10",
+     "dmgtype": "piercing",
+     "dmg2": "1d8",
+     "dmgtype2": "radiant",
+     "desc": "Ranged Attack Roll: +2, range 100/400 ft. Hit: 11 (2d10) Piercing damage plus 4 (1d8) Radiant damage."
+    }
+   ],
+   "id": "id-00006",
+   "name": "Dominion Warden 1",
+   "init": 7,
+   "x": 14,
+   "y": 4,
+   "side": "foe"
+  },
+  {
+   "hp": 52,
+   "ac": 18,
+   "dex_save": 0,
+   "wis_save": 2,
+   "speed": "30 ft.",
+   "space": 5,
+   "type": "Humanoid",
+   "int": 11,
+   "senses": "Passive Perception 10",
+   "wis_mod": 0,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The knight makes two attacks, using Greatsword or Heavy Crossbow in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Greatsword",
+     "atk": 5,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d6+3",
+     "dmgtype": "slashing",
+     "dmg2": "1d8",
+     "dmgtype2": "radiant",
+     "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 10 (2d6 + 3) Slashing damage plus 4 (1d8) Radiant damage."
+    },
+    {
+     "id": "id-00003",
+     "name": "Heavy Crossbow",
+     "atk": 2,
+     "atktype": "ranged",
+     "reach": 100,
+     "dmg": "2d10",
+     "dmgtype": "piercing",
+     "dmg2": "1d8",
+     "dmgtype2": "radiant",
+     "desc": "Ranged Attack Roll: +2, range 100/400 ft. Hit: 11 (2d10) Piercing damage plus 4 (1d8) Radiant damage."
+    }
+   ],
+   "id": "id-00007",
+   "name": "Dominion Warden 2",
+   "init": 5,
+   "x": 13,
+   "y": 5,
+   "side": "foe"
+  },
+  {
+   "hp": 120,
+   "ac": 16,
+   "dex_save": 2,
+   "wis_save": 4,
+   "speed": "30 ft.",
+   "space": 5,
+   "type": "Humanoid",
+   "int": 14,
+   "senses": "Passive Perception 11",
+   "wis_mod": 1,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "Veynar makes two Meteor Lance attacks."
+    },
+    {
+     "id": "id-00002",
+     "name": "Meteor Lance",
+     "atk": 8,
+     "atktype": "ranged",
+     "reach": 120,
+     "dmg": "2d10+5",
+     "dmgtype": "force",
+     "desc": "Melee or Ranged Attack Roll: +8, reach 5 ft. or range 120 ft. Hit: 16 (2d10 + 5) Force damage."
+    }
+   ],
+   "id": "id-00008",
+   "name": "Lord Veynar",
+   "init": 3,
+   "x": 14,
+   "y": 5,
+   "side": "foe"
+  }
+ ],
+ "wall_cells": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   3,
+   0
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   5,
+   0
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   7,
+   0
+  ],
+  [
+   8,
+   0
+  ],
+  [
+   9,
+   0
+  ],
+  [
+   10,
+   0
+  ],
+  [
+   11,
+   0
+  ],
+  [
+   12,
+   0
+  ],
+  [
+   13,
+   0
+  ],
+  [
+   14,
+   0
+  ],
+  [
+   15,
+   0
+  ],
+  [
+   16,
+   0
+  ],
+  [
+   17,
+   0
+  ],
+  [
+   18,
+   0
+  ],
+  [
+   19,
+   0
+  ],
+  [
+   20,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   20,
+   1
+  ],
+  [
+   0,
+   2
+  ],
+  [
+   20,
+   2
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   20,
+   3
+  ],
+  [
+   0,
+   4
+  ],
+  [
+   20,
+   4
+  ],
+  [
+   0,
+   5
+  ],
+  [
+   20,
+   5
+  ],
+  [
+   0,
+   6
+  ],
+  [
+   20,
+   6
+  ],
+  [
+   0,
+   7
+  ],
+  [
+   20,
+   7
+  ],
+  [
+   0,
+   8
+  ],
+  [
+   20,
+   8
+  ],
+  [
+   0,
+   9
+  ],
+  [
+   20,
+   9
+  ],
+  [
+   0,
+   10
+  ],
+  [
+   20,
+   10
+  ],
+  [
+   0,
+   11
+  ],
+  [
+   20,
+   11
+  ],
+  [
+   0,
+   12
+  ],
+  [
+   20,
+   12
+  ],
+  [
+   0,
+   13
+  ],
+  [
+   20,
+   13
+  ],
+  [
+   0,
+   14
+  ],
+  [
+   20,
+   14
+  ],
+  [
+   0,
+   15
+  ],
+  [
+   20,
+   15
+  ],
+  [
+   0,
+   16
+  ],
+  [
+   1,
+   16
+  ],
+  [
+   2,
+   16
+  ],
+  [
+   3,
+   16
+  ],
+  [
+   4,
+   16
+  ],
+  [
+   5,
+   16
+  ],
+  [
+   6,
+   16
+  ],
+  [
+   7,
+   16
+  ],
+  [
+   8,
+   16
+  ],
+  [
+   9,
+   16
+  ],
+  [
+   10,
+   16
+  ],
+  [
+   11,
+   16
+  ],
+  [
+   12,
+   16
+  ],
+  [
+   13,
+   16
+  ],
+  [
+   14,
+   16
+  ],
+  [
+   15,
+   16
+  ],
+  [
+   16,
+   16
+  ],
+  [
+   17,
+   16
+  ],
+  [
+   18,
+   16
+  ],
+  [
+   19,
+   16
+  ],
+  [
+   20,
+   16
+  ]
+ ],
+ "props": [
+  {
+   "kind": "crystal",
+   "x": 14,
+   "y": 3,
+   "rot": 0,
+   "label": "the dominion-stone"
+  },
+  {
+   "kind": "brazier",
+   "x": 9,
+   "y": 9,
+   "rot": 0,
+   "label": "coronation post: a regent's crown on iron"
+  },
+  {
+   "kind": "brazier",
+   "x": 11,
+   "y": 11,
+   "rot": 0,
+   "label": "coronation post: a regent's crown on iron"
+  },
+  {
+   "kind": "gears",
+   "x": 17,
+   "y": 11,
+   "rot": 0,
+   "label": "the boom's winch"
+  },
+  {
+   "kind": "lantern",
+   "x": 18,
+   "y": 8,
+   "rot": 0,
+   "label": "a ring set into the breach stone"
+  }
+ ]
+}
