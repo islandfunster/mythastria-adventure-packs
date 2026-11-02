@@ -14,13 +14,8 @@ Seven Isles is a free adventure.
 
 ## Load it into Mythastria
 
-1. Start Mythastria with this folder as its adventure library. Use the folder that holds `seven_isles`:
-
-   ```bash
-   py -3 engine\tools\sim_service.py --port 8840 --table isles-table\dist --adventure-packs <this folder>
-   ```
-
-2. Open `http://127.0.0.1:8840` and build or import a character on **Characters**.
+1. Make a folder called `adventures` beside Mythastria's `engine` folder, and put the `seven_isles` folder inside it.
+2. Start Mythastria, then build or import a character on **Characters**.
 3. Go to **Play an adventure**, tick your saved characters and choose Seven Isles.
 4. Press **Start the adventure**. Pick a place and press **Fight here**, or use **Play live** for any map.
 5. Press **End the adventure** to unload it.
